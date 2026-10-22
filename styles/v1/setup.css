@@ -37,11 +37,18 @@
 
 /* PLACEMENT INPUTS */
 
+#setup_inputsGridParentWrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #setup_inputsGridParent{
     display: grid;
     grid-template-columns: 30% 14% 14% 24% 18%;
     gap: 2px;
-    width: 70%;
+    width: 100%;
 }
 
 .setup_inputsHeader{
@@ -104,6 +111,10 @@
     width: calc(100% - 20px);
     padding: 10px;
     visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* HOMEGRID */
@@ -111,26 +122,22 @@
 .setup_homegridParent{
     display: grid;
     grid-template-columns: repeat(11, minmax(0, 1fr));
-    grid-template-rows: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(11, minmax(0, 1fr));
     height: 70vh;
     aspect-ratio: 1 / 1;
     gap: 1px;
+    background-color: white;
 }
 
 .setup_homegridChild{
-    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .setup_homegridHeader{
-    background-color: #CCCCCC;
+    background-color: #777777;
+    color: white;
     font-weight: bold;
     font-size: large;
-}
-
-.setup_homegridSquare{
-    background-color: white;
-    font-size: larger;
 }

@@ -45,8 +45,6 @@
 
         <div id="setup" class="layer alignTop">
             
-            <!-- <h1>Setup</h1> -->
-
             <div class="setup_containerParent">
 
                 <div id="setup_header" class="setup_containerChild span2 alignCentre logoMargin">
@@ -55,419 +53,422 @@
 
                 <div id="setup_inputs" class="setup_containerChild setup_containerChildLeftSide">
                     
-                    <div id="setup_inputsGridParent" class="alignCentre">
+                    <div id="setup_inputsGridParentWrapper">
 
-                        <div class="span5 marginBottom alignCentre">
-                            <h1>Place your Fleet</h1>
+                        <h1 class="alignCentre marginBottom">Place your Fleet</h1>
+
+                        <div id="setup_inputsGridParent">
+
+                            <div class="setup_inputsHeader">Ship</div>
+                            <div class="setup_inputsHeader span2">Starting Coordinate</div>
+                            <div class="setup_inputsHeader">Orientation</div>
+                            <div class="setup_inputsHeader">Action</div>
+
+                            <!-- CARRIER -->
+
+                            <div id="carrier_name" class="setup_input setup_inputShip">
+                                Carrier
+                            </div>
+
+                            <div>
+                                <select id="carrier_x" class="setup_input setup_inputCoordinate">
+                                    <option value="" disabled selected>X</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                    <option value="E">E</option>
+                                    <option value="F">F</option>
+                                    <option value="G">G</option>
+                                    <option value="H">H</option>
+                                    <option value="I">I</option>
+                                    <option value="J">J</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <select id="carrier_y" class="setup_input setup_inputCoordinate">
+                                    <option value="" disabled selected>Y</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <select id="carrier_orientation" class="setup_input setup_inputOrientation">
+                                    <option value="" disabled selected></option>
+                                    <option value="">Horizontal</option>
+                                    <option value="">Vertical</option>
+                                </select>
+                            </div>
+
+                            <div class="alignCentre">
+                                <button id="carrier_action" class="setup_input setup_inputAction">Place</button>
+                            </div>
+
+                            <!-- BATTLESHIP -->
+                                
+                            <div id="battleship_name" class="setup_input setup_inputShip">
+                                Battleship
+                            </div>
+
+                            <div>
+                                <select id="battleship_x" class="setup_input setup_inputCoordinate">
+                                    <option value="" disabled selected>X</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                    <option value="E">E</option>
+                                    <option value="F">F</option>
+                                    <option value="G">G</option>
+                                    <option value="H">H</option>
+                                    <option value="I">I</option>
+                                    <option value="J">J</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <select id="battleship_y" class="setup_input setup_inputCoordinate">
+                                    <option value="" disabled selected>Y</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <select id="battleship_orientation" class="setup_input setup_inputOrientation">
+                                    <option value="" disabled selected></option>
+                                    <option value="">Horizontal</option>
+                                    <option value="">Vertical</option>
+                                </select>
+                            </div>
+
+                            <div class="alignCentre">
+                                <button id="battleship_action" class="setup_input setup_inputAction">Place</button>
+                            </div>
+
+                            <!-- DESTROYER -->
+                                
+                            <div id="destroyer_name" class="setup_input setup_inputShip">
+                                Destroyer
+                            </div>
+
+                            <div>
+                                <select id="destroyer_x" class="setup_input setup_inputCoordinate">
+                                    <option value="" disabled selected>X</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                    <option value="E">E</option>
+                                    <option value="F">F</option>
+                                    <option value="G">G</option>
+                                    <option value="H">H</option>
+                                    <option value="I">I</option>
+                                    <option value="J">J</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <select id="destroyer_y" class="setup_input setup_inputCoordinate">
+                                    <option value="" disabled selected>Y</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <select id="destroyer_orientation" class="setup_input setup_inputOrientation">
+                                    <option value="" disabled selected></option>
+                                    <option value="">Horizontal</option>
+                                    <option value="">Vertical</option>
+                                </select>
+                            </div>
+
+                            <div class="alignCentre">
+                                <button id="destroyer_action" class="setup_input setup_inputAction">Place</button>
+                            </div>
+
+                            <!-- CRUISER -->
+                                
+                            <div id="cruiser_name" class="setup_input setup_inputShip">
+                                Cruiser
+                            </div>
+
+                            <div>
+                                <select id="cruiser_x" class="setup_input setup_inputCoordinate">
+                                    <option value="" disabled selected>X</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                    <option value="E">E</option>
+                                    <option value="F">F</option>
+                                    <option value="G">G</option>
+                                    <option value="H">H</option>
+                                    <option value="I">I</option>
+                                    <option value="J">J</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <select id="cruiser_y" class="setup_input setup_inputCoordinate">
+                                    <option value="" disabled selected>Y</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <select id="cruiser_orientation" class="setup_input setup_inputOrientation">
+                                    <option value="" disabled selected></option>
+                                    <option value="">Horizontal</option>
+                                    <option value="">Vertical</option>
+                                </select>
+                            </div>
+
+                            <div class="alignCentre">
+                                <button id="cruiser_action" class="setup_input setup_inputAction">Place</button>
+                            </div>
+
+                            <!-- PATROL BOAT -->
+                                
+                            <div id="patrolBoat_name" class="setup_input setup_inputShip">
+                                Patrol Boat
+                            </div>
+
+                            <div>
+                                <select id="patrolBoat_x" class="setup_input setup_inputCoordinate">
+                                    <option value="" disabled selected>X</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                    <option value="E">E</option>
+                                    <option value="F">F</option>
+                                    <option value="G">G</option>
+                                    <option value="H">H</option>
+                                    <option value="I">I</option>
+                                    <option value="J">J</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <select id="patrolBoat_y" class="setup_input setup_inputCoordinate">
+                                    <option value="" disabled selected>Y</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <select id="patrolBoat_orientation" class="setup_input setup_inputOrientation">
+                                    <option value="" disabled selected></option>
+                                    <option value="">Horizontal</option>
+                                    <option value="">Vertical</option>
+                                </select>
+                            </div>
+
+                            <div class="alignCentre">
+                                <button id="patrolBoat_action" class="setup_input setup_inputAction">Place</button>
+                            </div>
+                            
+                            <div class="span5 marginTop alignCentre">
+                                <button id="setup_confirmFleetPlacement">Confirm Fleet placement</button>
+                            </div>
+
+                            <div class="span5 setup_error marginTop">
+                                <h1>Error</h1>
+                                <h2>Error description</h2>
+                            </div>
                         </div>
-
-                        <div class="setup_inputsHeader">Ship</div>
-                        <div class="setup_inputsHeader span2">Starting Coordinate</div>
-                        <div class="setup_inputsHeader">Orientation</div>
-                        <div class="setup_inputsHeader">Action</div>
-
-                        <!-- CARRIER -->
-
-                        <div id="carrier_name" class="setup_input setup_inputShip">
-                            Carrier
-                        </div>
-
-                        <div>
-                            <select id="carrier_x" class="setup_input setup_inputCoordinate">
-                                <option value="" disabled selected>X</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>
-                                <option value="F">F</option>
-                                <option value="G">G</option>
-                                <option value="H">H</option>
-                                <option value="I">I</option>
-                                <option value="J">J</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <select id="carrier_y" class="setup_input setup_inputCoordinate">
-                                <option value="" disabled selected>Y</option>
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <select id="carrier_orientation" class="setup_input setup_inputOrientation">
-                                <option value="" disabled selected></option>
-                                <option value="">Horizontal</option>
-                                <option value="">Vertical</option>
-                            </select>
-                        </div>
-
-                        <div class="alignCentre">
-                            <button id="carrier_action" class="setup_input setup_inputAction">Place</button>
-                        </div>
-
-                        <!-- BATTLESHIP -->
-                         
-                        <div id="battleship_name" class="setup_input setup_inputShip">
-                            Battleship
-                        </div>
-
-                        <div>
-                            <select id="battleship_x" class="setup_input setup_inputCoordinate">
-                                <option value="" disabled selected>X</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>
-                                <option value="F">F</option>
-                                <option value="G">G</option>
-                                <option value="H">H</option>
-                                <option value="I">I</option>
-                                <option value="J">J</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <select id="battleship_y" class="setup_input setup_inputCoordinate">
-                                <option value="" disabled selected>Y</option>
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <select id="battleship_orientation" class="setup_input setup_inputOrientation">
-                                <option value="" disabled selected></option>
-                                <option value="">Horizontal</option>
-                                <option value="">Vertical</option>
-                            </select>
-                        </div>
-
-                        <div class="alignCentre">
-                            <button id="battleship_action" class="setup_input setup_inputAction">Place</button>
-                        </div>
-
-                        <!-- DESTROYER -->
-                         
-                        <div id="destroyer_name" class="setup_input setup_inputShip">
-                            Destroyer
-                        </div>
-
-                        <div>
-                            <select id="destroyer_x" class="setup_input setup_inputCoordinate">
-                                <option value="" disabled selected>X</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>
-                                <option value="F">F</option>
-                                <option value="G">G</option>
-                                <option value="H">H</option>
-                                <option value="I">I</option>
-                                <option value="J">J</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <select id="destroyer_y" class="setup_input setup_inputCoordinate">
-                                <option value="" disabled selected>Y</option>
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <select id="destroyer_orientation" class="setup_input setup_inputOrientation">
-                                <option value="" disabled selected></option>
-                                <option value="">Horizontal</option>
-                                <option value="">Vertical</option>
-                            </select>
-                        </div>
-
-                        <div class="alignCentre">
-                            <button id="destroyer_action" class="setup_input setup_inputAction">Place</button>
-                        </div>
-
-                        <!-- CRUISER -->
-                         
-                        <div id="cruiser_name" class="setup_input setup_inputShip">
-                            Cruiser
-                        </div>
-
-                        <div>
-                            <select id="cruiser_x" class="setup_input setup_inputCoordinate">
-                                <option value="" disabled selected>X</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>
-                                <option value="F">F</option>
-                                <option value="G">G</option>
-                                <option value="H">H</option>
-                                <option value="I">I</option>
-                                <option value="J">J</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <select id="cruiser_y" class="setup_input setup_inputCoordinate">
-                                <option value="" disabled selected>Y</option>
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <select id="cruiser_orientation" class="setup_input setup_inputOrientation">
-                                <option value="" disabled selected></option>
-                                <option value="">Horizontal</option>
-                                <option value="">Vertical</option>
-                            </select>
-                        </div>
-
-                        <div class="alignCentre">
-                            <button id="cruiser_action" class="setup_input setup_inputAction">Place</button>
-                        </div>
-
-                        <!-- PATROL BOAT -->
-                         
-                        <div id="patrolBoat_name" class="setup_input setup_inputShip">
-                            Patrol Boat
-                        </div>
-
-                        <div>
-                            <select id="patrolBoat_x" class="setup_input setup_inputCoordinate">
-                                <option value="" disabled selected>X</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>
-                                <option value="F">F</option>
-                                <option value="G">G</option>
-                                <option value="H">H</option>
-                                <option value="I">I</option>
-                                <option value="J">J</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <select id="patrolBoat_y" class="setup_input setup_inputCoordinate">
-                                <option value="" disabled selected>Y</option>
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <select id="patrolBoat_orientation" class="setup_input setup_inputOrientation">
-                                <option value="" disabled selected></option>
-                                <option value="">Horizontal</option>
-                                <option value="">Vertical</option>
-                            </select>
-                        </div>
-
-                        <div class="alignCentre">
-                            <button id="patrolBoat_action" class="setup_input setup_inputAction">Place</button>
-                        </div>
-                        
-                        <div class="span5 marginTop alignCentre">
-                            <button id="setup_confirmFleetPlacement">Confirm Fleet placement</button>
-                        </div>
-
-                        <div class="setup_span5 setup_error">
-                            <h1>Error</h1>
-                            <h2>Error description</h2>
-                        </div>
-
                     </div>
 
                 </div>
 
                 <div id="setup_homegrid" class="setup_containerChild setup_containerChildRightSide">
                     
-                    <div class="setup_homegridParent">
+                     <div id="setup_homegridWrapper">
+                            
+                        <h1 class="alignCentre marginBottom">HomeGrid</h1>
 
-                        <div class="span11 marginBottom alignCentre">
-                            <h1>HomeGrid</h1>
+                        <div class="setup_homegridParent">
+
+                            <div id="Header" class="setup_homegridChild setup_homegridHeader"></div>
+                            <div id="HeaderA" class="setup_homegridChild setup_homegridHeader">A</div>
+                            <div id="HeaderB" class="setup_homegridChild setup_homegridHeader">B</div>
+                            <div id="HeaderC" class="setup_homegridChild setup_homegridHeader">C</div>
+                            <div id="HeaderD" class="setup_homegridChild setup_homegridHeader">D</div>
+                            <div id="HeaderE" class="setup_homegridChild setup_homegridHeader">E</div>
+                            <div id="HeaderF" class="setup_homegridChild setup_homegridHeader">F</div>
+                            <div id="HeaderG" class="setup_homegridChild setup_homegridHeader">G</div>
+                            <div id="HeaderH" class="setup_homegridChild setup_homegridHeader">H</div>
+                            <div id="HeaderI" class="setup_homegridChild setup_homegridHeader">I</div>
+                            <div id="HeaderJ" class="setup_homegridChild setup_homegridHeader">J</div>
+
+                            <div id="Header0" class="setup_homegridChild setup_homegridHeader">0</div>
+                            <div id="A0" class="setup_homegridChild water"></div>
+                            <div id="B0" class="setup_homegridChild water"></div>
+                            <div id="C0" class="setup_homegridChild water"></div>
+                            <div id="D0" class="setup_homegridChild water"></div>
+                            <div id="E0" class="setup_homegridChild water"></div>
+                            <div id="F0" class="setup_homegridChild water"></div>
+                            <div id="G0" class="setup_homegridChild water"></div>
+                            <div id="H0" class="setup_homegridChild water"></div>
+                            <div id="I0" class="setup_homegridChild water"></div>
+                            <div id="J0" class="setup_homegridChild water"></div>
+
+                            <div id="Header1" class="setup_homegridChild setup_homegridHeader">1</div>
+                            <div id="A1" class="setup_homegridChild water"></div>
+                            <div id="B1" class="setup_homegridChild water"></div>
+                            <div id="C1" class="setup_homegridChild water"></div>
+                            <div id="D1" class="setup_homegridChild water"></div>
+                            <div id="E1" class="setup_homegridChild water"></div>
+                            <div id="F1" class="setup_homegridChild water"></div>
+                            <div id="G1" class="setup_homegridChild water"></div>
+                            <div id="H1" class="setup_homegridChild water"></div>
+                            <div id="I1" class="setup_homegridChild water"></div>
+                            <div id="J1" class="setup_homegridChild water"></div>
+
+                            <div id="Header2" class="setup_homegridChild setup_homegridHeader">2</div>
+                            <div id="A2" class="setup_homegridChild water"></div>
+                            <div id="B2" class="setup_homegridChild water"></div>
+                            <div id="C2" class="setup_homegridChild water"></div>
+                            <div id="D2" class="setup_homegridChild water"></div>
+                            <div id="E2" class="setup_homegridChild water"></div>
+                            <div id="F2" class="setup_homegridChild water"></div>
+                            <div id="G2" class="setup_homegridChild water"></div>
+                            <div id="H2" class="setup_homegridChild water"></div>
+                            <div id="I2" class="setup_homegridChild water"></div>
+                            <div id="J2" class="setup_homegridChild water"></div>
+                            
+                            <div id="Header3" class="setup_homegridChild setup_homegridHeader">3</div>
+                            <div id="A3" class="setup_homegridChild water"></div>
+                            <div id="B3" class="setup_homegridChild water"></div>
+                            <div id="C3" class="setup_homegridChild water"></div>
+                            <div id="D3" class="setup_homegridChild water"></div>
+                            <div id="E3" class="setup_homegridChild water"></div>
+                            <div id="F3" class="setup_homegridChild water"></div>
+                            <div id="G3" class="setup_homegridChild water"></div>
+                            <div id="H3" class="setup_homegridChild water"></div>
+                            <div id="I3" class="setup_homegridChild water"></div>
+                            <div id="J3" class="setup_homegridChild water"></div>
+
+                            <div id="Header4" class="setup_homegridChild setup_homegridHeader">4</div>
+                            <div id="A4" class="setup_homegridChild water"></div>
+                            <div id="B4" class="setup_homegridChild water"></div>
+                            <div id="C4" class="setup_homegridChild water"></div>
+                            <div id="D4" class="setup_homegridChild water"></div>
+                            <div id="E4" class="setup_homegridChild water"></div>
+                            <div id="F4" class="setup_homegridChild water"></div>
+                            <div id="G4" class="setup_homegridChild water"></div>
+                            <div id="H4" class="setup_homegridChild water"></div>
+                            <div id="I4" class="setup_homegridChild water"></div>
+                            <div id="J4" class="setup_homegridChild water"></div>
+
+                            <div id="Header5" class="setup_homegridChild setup_homegridHeader">5</div>
+                            <div id="A5" class="setup_homegridChild water"></div>
+                            <div id="B5" class="setup_homegridChild water"></div>
+                            <div id="C5" class="setup_homegridChild water"></div>
+                            <div id="D5" class="setup_homegridChild water"></div>
+                            <div id="E5" class="setup_homegridChild water"></div>
+                            <div id="F5" class="setup_homegridChild water"></div>
+                            <div id="G5" class="setup_homegridChild water"></div>
+                            <div id="H5" class="setup_homegridChild water"></div>
+                            <div id="I5" class="setup_homegridChild water"></div>
+                            <div id="J5" class="setup_homegridChild water"></div>
+
+                            <div id="Header6" class="setup_homegridChild setup_homegridHeader">6</div>
+                            <div id="A6" class="setup_homegridChild water"></div>
+                            <div id="B6" class="setup_homegridChild water"></div>
+                            <div id="C6" class="setup_homegridChild water"></div>
+                            <div id="D6" class="setup_homegridChild water"></div>
+                            <div id="E6" class="setup_homegridChild water"></div>
+                            <div id="F6" class="setup_homegridChild water"></div>
+                            <div id="G6" class="setup_homegridChild water"></div>
+                            <div id="H6" class="setup_homegridChild water"></div>
+                            <div id="I6" class="setup_homegridChild water"></div>
+                            <div id="J6" class="setup_homegridChild water"></div>
+
+                            <div id="Header7" class="setup_homegridChild setup_homegridHeader">7</div>
+                            <div id="A7" class="setup_homegridChild water"></div>
+                            <div id="B7" class="setup_homegridChild water"></div>
+                            <div id="C7" class="setup_homegridChild water"></div>
+                            <div id="D7" class="setup_homegridChild water"></div>
+                            <div id="E7" class="setup_homegridChild water"></div>
+                            <div id="F7" class="setup_homegridChild water"></div>
+                            <div id="G7" class="setup_homegridChild water"></div>
+                            <div id="H7" class="setup_homegridChild water"></div>
+                            <div id="I7" class="setup_homegridChild water"></div>
+                            <div id="J7" class="setup_homegridChild water"></div>
+
+                            <div id="Header8" class="setup_homegridChild setup_homegridHeader">8</div>
+                            <div id="A8" class="setup_homegridChild water"></div>
+                            <div id="B8" class="setup_homegridChild water"></div>
+                            <div id="C8" class="setup_homegridChild water"></div>
+                            <div id="D8" class="setup_homegridChild water"></div>
+                            <div id="E8" class="setup_homegridChild water"></div>
+                            <div id="F8" class="setup_homegridChild water"></div>
+                            <div id="G8" class="setup_homegridChild water"></div>
+                            <div id="H8" class="setup_homegridChild water"></div>
+                            <div id="I8" class="setup_homegridChild water"></div>
+                            <div id="J8" class="setup_homegridChild water"></div>
+
+                            <div id="Header9" class="setup_homegridChild setup_homegridHeader">9</div>
+                            <div id="A9" class="setup_homegridChild water"></div>
+                            <div id="B9" class="setup_homegridChild water"></div>
+                            <div id="C9" class="setup_homegridChild water"></div>
+                            <div id="D9" class="setup_homegridChild water"></div>
+                            <div id="E9" class="setup_homegridChild water"></div>
+                            <div id="F9" class="setup_homegridChild water"></div>
+                            <div id="G9" class="setup_homegridChild water"></div>
+                            <div id="H9" class="setup_homegridChild water"></div>
+                            <div id="I9" class="setup_homegridChild water"></div>
+                            <div id="J9" class="setup_homegridChild water"></div>
+
                         </div>
 
-                        <div id="Header" class="setup_homegridChild setup_homegridHeader"></div>
-                        <div id="HeaderA" class="setup_homegridChild setup_homegridHeader">A</div>
-                        <div id="HeaderB" class="setup_homegridChild setup_homegridHeader">B</div>
-                        <div id="HeaderC" class="setup_homegridChild setup_homegridHeader">C</div>
-                        <div id="HeaderD" class="setup_homegridChild setup_homegridHeader">D</div>
-                        <div id="HeaderE" class="setup_homegridChild setup_homegridHeader">E</div>
-                        <div id="HeaderF" class="setup_homegridChild setup_homegridHeader">F</div>
-                        <div id="HeaderG" class="setup_homegridChild setup_homegridHeader">G</div>
-                        <div id="HeaderH" class="setup_homegridChild setup_homegridHeader">H</div>
-                        <div id="HeaderI" class="setup_homegridChild setup_homegridHeader">I</div>
-                        <div id="HeaderJ" class="setup_homegridChild setup_homegridHeader">J</div>
-
-                        <div id="Header0" class="setup_homegridChild setup_homegridHeader">0</div>
-                        <div id="A0" class="setup_homegridChild setup_homegridSquare">A0</div>
-                        <div id="B0" class="setup_homegridChild setup_homegridSquare">B0</div>
-                        <div id="C0" class="setup_homegridChild setup_homegridSquare">C0</div>
-                        <div id="D0" class="setup_homegridChild setup_homegridSquare">D0</div>
-                        <div id="E0" class="setup_homegridChild setup_homegridSquare">E0</div>
-                        <div id="F0" class="setup_homegridChild setup_homegridSquare">F0</div>
-                        <div id="G0" class="setup_homegridChild setup_homegridSquare">G0</div>
-                        <div id="H0" class="setup_homegridChild setup_homegridSquare">H0</div>
-                        <div id="I0" class="setup_homegridChild setup_homegridSquare">I0</div>
-                        <div id="J0" class="setup_homegridChild setup_homegridSquare">J0</div>
-
-                        <div id="Header1" class="setup_homegridChild setup_homegridHeader">1</div>
-                        <div id="A1" class="setup_homegridChild setup_homegridSquare">A1</div>
-                        <div id="B1" class="setup_homegridChild setup_homegridSquare">B1</div>
-                        <div id="C1" class="setup_homegridChild setup_homegridSquare">C1</div>
-                        <div id="D1" class="setup_homegridChild setup_homegridSquare">D1</div>
-                        <div id="E1" class="setup_homegridChild setup_homegridSquare">E1</div>
-                        <div id="F1" class="setup_homegridChild setup_homegridSquare">F1</div>
-                        <div id="G1" class="setup_homegridChild setup_homegridSquare">G1</div>
-                        <div id="H1" class="setup_homegridChild setup_homegridSquare">H1</div>
-                        <div id="I1" class="setup_homegridChild setup_homegridSquare">I1</div>
-                        <div id="J1" class="setup_homegridChild setup_homegridSquare">J1</div>
-
-                        <div id="Header2" class="setup_homegridChild setup_homegridHeader">2</div>
-                        <div id="A2" class="setup_homegridChild setup_homegridSquare">A2</div>
-                        <div id="B2" class="setup_homegridChild setup_homegridSquare">B2</div>
-                        <div id="C2" class="setup_homegridChild setup_homegridSquare">C2</div>
-                        <div id="D2" class="setup_homegridChild setup_homegridSquare">D2</div>
-                        <div id="E2" class="setup_homegridChild setup_homegridSquare">E2</div>
-                        <div id="F2" class="setup_homegridChild setup_homegridSquare">F2</div>
-                        <div id="G2" class="setup_homegridChild setup_homegridSquare">G2</div>
-                        <div id="H2" class="setup_homegridChild setup_homegridSquare">H2</div>
-                        <div id="I2" class="setup_homegridChild setup_homegridSquare">I2</div>
-                        <div id="J2" class="setup_homegridChild setup_homegridSquare">J2</div>
-                        
-                        <div id="Header3" class="setup_homegridChild setup_homegridHeader">3</div>
-                        <div id="A3" class="setup_homegridChild setup_homegridSquare">A3</div>
-                        <div id="B3" class="setup_homegridChild setup_homegridSquare">B3</div>
-                        <div id="C3" class="setup_homegridChild setup_homegridSquare">C3</div>
-                        <div id="D3" class="setup_homegridChild setup_homegridSquare">D3</div>
-                        <div id="E3" class="setup_homegridChild setup_homegridSquare">E3</div>
-                        <div id="F3" class="setup_homegridChild setup_homegridSquare">F3</div>
-                        <div id="G3" class="setup_homegridChild setup_homegridSquare">G3</div>
-                        <div id="H3" class="setup_homegridChild setup_homegridSquare">H3</div>
-                        <div id="I3" class="setup_homegridChild setup_homegridSquare">I3</div>
-                        <div id="J3" class="setup_homegridChild setup_homegridSquare">J3</div>
-
-                        <div id="Header4" class="setup_homegridChild setup_homegridHeader">4</div>
-                        <div id="A4" class="setup_homegridChild setup_homegridSquare">A4</div>
-                        <div id="B4" class="setup_homegridChild setup_homegridSquare">B4</div>
-                        <div id="C4" class="setup_homegridChild setup_homegridSquare">C4</div>
-                        <div id="D4" class="setup_homegridChild setup_homegridSquare">D4</div>
-                        <div id="E4" class="setup_homegridChild setup_homegridSquare">E4</div>
-                        <div id="F4" class="setup_homegridChild setup_homegridSquare">F4</div>
-                        <div id="G4" class="setup_homegridChild setup_homegridSquare">G4</div>
-                        <div id="H4" class="setup_homegridChild setup_homegridSquare">H4</div>
-                        <div id="I4" class="setup_homegridChild setup_homegridSquare">I4</div>
-                        <div id="J4" class="setup_homegridChild setup_homegridSquare">J4</div>
-
-                        <div id="Header5" class="setup_homegridChild setup_homegridHeader">5</div>
-                        <div id="A5" class="setup_homegridChild setup_homegridSquare">A5</div>
-                        <div id="B5" class="setup_homegridChild setup_homegridSquare">B5</div>
-                        <div id="C5" class="setup_homegridChild setup_homegridSquare">C5</div>
-                        <div id="D5" class="setup_homegridChild setup_homegridSquare">D5</div>
-                        <div id="E5" class="setup_homegridChild setup_homegridSquare">E5</div>
-                        <div id="F5" class="setup_homegridChild setup_homegridSquare">F5</div>
-                        <div id="G5" class="setup_homegridChild setup_homegridSquare">G5</div>
-                        <div id="H5" class="setup_homegridChild setup_homegridSquare">H5</div>
-                        <div id="I5" class="setup_homegridChild setup_homegridSquare">I5</div>
-                        <div id="J5" class="setup_homegridChild setup_homegridSquare">J5</div>
-
-                        <div id="Header6" class="setup_homegridChild setup_homegridHeader">6</div>
-                        <div id="A6" class="setup_homegridChild setup_homegridSquare">A6</div>
-                        <div id="B6" class="setup_homegridChild setup_homegridSquare">B6</div>
-                        <div id="C6" class="setup_homegridChild setup_homegridSquare">C6</div>
-                        <div id="D6" class="setup_homegridChild setup_homegridSquare">D6</div>
-                        <div id="E6" class="setup_homegridChild setup_homegridSquare">E6</div>
-                        <div id="F6" class="setup_homegridChild setup_homegridSquare">F6</div>
-                        <div id="G6" class="setup_homegridChild setup_homegridSquare">G6</div>
-                        <div id="H6" class="setup_homegridChild setup_homegridSquare">H6</div>
-                        <div id="I6" class="setup_homegridChild setup_homegridSquare">I6</div>
-                        <div id="J6" class="setup_homegridChild setup_homegridSquare">J6</div>
-
-                        <div id="Header7" class="setup_homegridChild setup_homegridHeader">7</div>
-                        <div id="A7" class="setup_homegridChild setup_homegridSquare">A7</div>
-                        <div id="B7" class="setup_homegridChild setup_homegridSquare">B7</div>
-                        <div id="C7" class="setup_homegridChild setup_homegridSquare">C7</div>
-                        <div id="D7" class="setup_homegridChild setup_homegridSquare">D7</div>
-                        <div id="E7" class="setup_homegridChild setup_homegridSquare">E7</div>
-                        <div id="F7" class="setup_homegridChild setup_homegridSquare">F7</div>
-                        <div id="G7" class="setup_homegridChild setup_homegridSquare">G7</div>
-                        <div id="H7" class="setup_homegridChild setup_homegridSquare">H7</div>
-                        <div id="I7" class="setup_homegridChild setup_homegridSquare">I7</div>
-                        <div id="J7" class="setup_homegridChild setup_homegridSquare">J7</div>
-
-                        <div id="Header8" class="setup_homegridChild setup_homegridHeader">8</div>
-                        <div id="A8" class="setup_homegridChild setup_homegridSquare">A8</div>
-                        <div id="B8" class="setup_homegridChild setup_homegridSquare">B8</div>
-                        <div id="C8" class="setup_homegridChild setup_homegridSquare">C8</div>
-                        <div id="D8" class="setup_homegridChild setup_homegridSquare">D8</div>
-                        <div id="E8" class="setup_homegridChild setup_homegridSquare">E8</div>
-                        <div id="F8" class="setup_homegridChild setup_homegridSquare">F8</div>
-                        <div id="G8" class="setup_homegridChild setup_homegridSquare">G8</div>
-                        <div id="H8" class="setup_homegridChild setup_homegridSquare">H8</div>
-                        <div id="I8" class="setup_homegridChild setup_homegridSquare">I8</div>
-                        <div id="J8" class="setup_homegridChild setup_homegridSquare">J8</div>
-
-                        <div id="Header9" class="setup_homegridChild setup_homegridHeader">9</div>
-                        <div id="A9" class="setup_homegridChild setup_homegridSquare">A9</div>
-                        <div id="B9" class="setup_homegridChild setup_homegridSquare">B9</div>
-                        <div id="C9" class="setup_homegridChild setup_homegridSquare">C9</div>
-                        <div id="D9" class="setup_homegridChild setup_homegridSquare">D9</div>
-                        <div id="E9" class="setup_homegridChild setup_homegridSquare">E9</div>
-                        <div id="F9" class="setup_homegridChild setup_homegridSquare">F9</div>
-                        <div id="G9" class="setup_homegridChild setup_homegridSquare">G9</div>
-                        <div id="H9" class="setup_homegridChild setup_homegridSquare">H9</div>
-                        <div id="I9" class="setup_homegridChild setup_homegridSquare">I9</div>
-                        <div id="J9" class="setup_homegridChild setup_homegridSquare">J9</div>
                     </div>
 
                 </div>

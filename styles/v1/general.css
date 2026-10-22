@@ -32,6 +32,11 @@ button{
     justify-content: center;
 }
 
+.alignRight{
+    display: flex;
+    justify-content: right;
+}
+
 .span2{
     grid-column: span 2;
 }
@@ -50,5 +55,33 @@ button{
 
 .marginBottom{
     margin-bottom: 20px;
+}
+
+.water{
+    background-color: lightblue;
+    background-image: url("/assets/images/waves.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.miss{
+    background-color: aqua;
+    background-image: url("/assets/images/miss.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hit{
+    background-color: orange;
+    background-image: url("/assets/images/hit.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sunk{
+    background-color: red;
+    background-image: url("/assets/images/sunk.png ");
+    background-repeat: no-repeat;
+    background-position: center;
 }
     
