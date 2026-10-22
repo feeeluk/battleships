@@ -1,10 +1,136 @@
 #setup {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
     background-color: brown;
-    color: green;
+}
+
+/* CONTAINER */
+
+.setup_containerParent{
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 5fr);
+    grid-template-rows: 15vh 80vh 5vh;
+    width: 100%;
+}
+
+.setup_containerChild{
+    /* background-color: ; */
+    /* border: solid white 1px; */
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+    .setup_containerChildLeftSide{
+        justify-content: right;
+        margin-right: 50px;
+    }
+    
+    .setup_containerChildRightSide{
+        justify-content: left;
+        margin-left: 50px;
+    }
+
+.setup_containerChild img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+/* PLACEMENT INPUTS */
+
+#setup_inputsGridParent{
+    display: grid;
+    grid-template-columns: 30% 14% 14% 24% 18%;
+    gap: 2px;
+    width: 70%;
+}
+
+.setup_inputsHeader{
+    background-color: #777777;
+    color: white;
+    border: solid #444444 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-weight: bold; */
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.setup_input{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+}
+
+.setup_inputShip{
+    width: calc(100% - 12px);
+    height: 18px;
+    padding: 5px;
+    border: solid 1px darkslategrey;
+}
+
+.setup_inputAction{
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px darkslategray;
+    background-color: #DDDDDD;
+}
+
+#setup_confirmFleetPlacement{
+    width: 50%;
+    padding: 10px;
+    font-size: medium;
+    border-radius: 5px;
+    border: solid 1px darkslategray;
+}
+
+.setup_header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.setup_confirmFleetPlacement{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.setup_error{
+    background-color: blueviolet;
+    height: 100%;
+    width: calc(100% - 20px);
+    padding: 10px;
+    visibility: hidden;
+}
+
+/* HOMEGRID */
+
+.setup_homegridParent{
+    display: grid;
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+    grid-template-rows: repeat(12, minmax(0, 1fr));
+    height: 70vh;
+    aspect-ratio: 1 / 1;
+    gap: 1px;
+}
+
+.setup_homegridChild{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setup_homegridHeader{
+    background-color: #CCCCCC;
+    font-weight: bold;
+    font-size: large;
+}
+
+.setup_homegridSquare{
+    background-color: white;
+    font-size: larger;
 }
