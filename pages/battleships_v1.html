@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="/styles/v1/general.css?v002">
     <link rel="stylesheet" href="/styles/v1/initialisation.css?v002">
-    <link rel="stylesheet" href="/styles/v1/setup.css?v008">
+    <link rel="stylesheet" href="/styles/v1/setup.css?v009">
     <link rel="stylesheet" href="/styles/v1/activePlay.css?v001">
     <link rel="stylesheet" href="/styles/v1/gameOver.css?v001">
 
@@ -20,7 +20,7 @@
 
     <body>  
 
-        <div class="layer" id="initialisation">
+        <div id="initialisation" class="layer alignCentre">
 
             <div id="initialisation_container">
                 
@@ -43,7 +43,7 @@
             
         </div>
 
-        <div id="setup" class="layer alignTop">
+        <div id="setup" class="layer">
             
             <div class="setup_containerParent">
 
@@ -314,13 +314,13 @@
                                 <button id="patrolBoat_action" class="setup_input disabled">Place</button>
                             </div>
                             
-                            <div class="span5 marginTop alignCentre">
-                                <button id="setup_confirmFleetPlacement" class="disabled">Confirm Fleet placement</button>
+                            <div id="setup_confirmFleetPlacementDiv" class="span5 marginTop alignCentre">
+                                <button id="setup_confirmFleetPlacementButton" class="disabled">Confirm Fleet placement</button>
                             </div>
 
-                            <div class="span5 setup_error marginTop">
-                                <h1>Error</h1>
-                                <h2>Error description</h2>
+                            <div id="setup_errorDiv" class="span5 marginTop">
+                                <h1 id="setup_errorH1">Error</h1>
+                                <h2 id="setup_errorH2">Error description</h2>
                             </div>
                         </div>
                     </div>
@@ -477,12 +477,12 @@
 
         </div>
 
-        <div class="layer" id="activePlay">
+        <div id="activePlay" class="layer" >
             <h1>ActivePlay</h1>
             <button>Next</button>
         </div>
 
-        <div class="layer" id="gameOver">
+        <div id="gameOver" class="layer alignTop" >
             <h1>GameOver</h1>
             <button>Reset</button>
         </div>   

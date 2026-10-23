@@ -67,20 +67,18 @@
     height: 30px;
 }
 
-#setup_confirmFleetPlacement{
+#setup_confirmFleetPlacementDiv{
+    width: 100%;
+    display: flex;
+}
+
+#setup_confirmFleetPlacementButton{
     width: 50%;
     padding: 10px;
     font-size: medium;
 }
 
-.setup_confirmFleetPlacement{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.setup_error{
+#setup_errorDiv{
     background-color: blueviolet;
     height: 100%;
     width: calc(100% - 20px);
