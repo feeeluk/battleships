@@ -1,5 +1,5 @@
-#setup {
-}
+/* #setup {
+} */
 
 /* CONTAINER */
 
@@ -11,8 +11,6 @@
 }
 
 .setup_containerChild{
-    /* background-color: ; */
-    /* border: solid white 1px; */
     display: flex;
     flex-direction: row;
     align-items: start;
