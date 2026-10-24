@@ -110,60 +110,183 @@ input[type="text"]{
 
 .water{
     background-color: lightblue;
-    background-image: url("/assets/images/waves.png");
+    /* background-image: url("");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
 }
 
 .miss{
-    background-color: aqua;
-    background-image: url("/assets/images/miss.webp");
+    background-image: url("/assets/images/actions/miss.png");
     background-repeat: no-repeat;
     background-position: center;
+    /* background-size: contain; */
 }
 
-.hit{
-    background-color: orange;
-    background-image: url("/assets/images/hit.png");
+.hit {
+    position: relative; /* establishes a positioning context */
+}
+
+.hit::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url("/assets/images/actions/hit.png");
     background-repeat: no-repeat;
     background-position: center;
+    /* background-size: contain; */
 }
 
 .sunk{
     background-color: red;
-    background-image: url("/assets/images/sunk.png ");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.carrier1v{
-    background-image: url("/assets/images/carrier/carrier1.png ");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.horizontal{
+    transform: rotate(90deg);
 }
-.carrier2v{
-    background-image: url("/assets/images/carrier/carrier2.png ");
+
+.ship{
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
-.carrier3v{
-    background-image: url("/assets/images/carrier/carrier3.png ");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+.carrier_1{
+    background-image: url("/assets/images/fleet/carrier/carrier_1.png ");
 }
-.carrier4v{
-    background-image: url("/assets/images/carrier/carrier4.png ");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+.carrier_2{
+    background-image: url("/assets/images/fleet/carrier/carrier_2.png ");;
 }
-.carrier5v{
-    background-image: url("/assets/images/carrier/carrier5.png ");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+.carrier_3{
+    background-image: url("/assets/images/fleet/carrier/carrier_3.png ");
+}
+
+.carrier_4{
+    background-image: url("/assets/images/fleet/carrier/carrier_4.png ");
+}
+
+.carrier_5{
+    background-image: url("/assets/images/fleet/carrier/carrier_5.png ");
+}
+
+.battleship_1{
+    background-image: url("/assets/images/fleet/battleship/battleship_1.png ");
+}
+
+.battleship_2{
+    background-image: url("/assets/images/fleet/battleship/battleship_2.png ");
+}
+
+.battleship_3{
+    background-image: url("/assets/images/fleet/battleship/battleship_3.png ");
+}
+
+.battleship_4{
+    background-image: url("/assets/images/fleet/battleship/battleship_4.png ");
+}
+
+.destroyer_1{
+    background-image: url("/assets/images/fleet/destroyer/destroyer_1.png ");
+}
+
+.destroyer_2{
+    background-image: url("/assets/images/fleet/destroyer/destroyer_2.png ");
+}
+
+.destroyer_3{
+    background-image: url("/assets/images/fleet/destroyer/destroyer_3.png ");
+}
+
+.cruiser_1{
+    background-image: url("/assets/images/fleet/cruiser/cruiser_1.png ");
+}
+
+.cruiser_2{
+    background-image: url("/assets/images/fleet/cruiser/cruiser_2.png ");
+}
+
+.cruiser_3{
+    background-image: url("/assets/images/fleet/cruiser/cruiser_3.png ");
+}
+
+.patrolBoat_1{
+    background-image: url("/assets/images/fleet/patrol_boat/patrol_boat_1.png ");
+}
+
+.patrolBoat_2{
+    background-image: url("/assets/images/fleet/patrol_boat/patrol_boat_2.png ");
+}
+
+.carrier_1_sunk{
+    background-image: url("/assets/images/fleet/carrier/carrier_1_sunk.png ");
+}
+
+.carrier_2_sunk{
+    background-image: url("/assets/images/fleet/carrier/carrier_2_sunk.png ");;
+}
+
+.carrier_3_sunk{
+    background-image: url("/assets/images/fleet/carrier/carrier_3_sunk.png ");
+}
+
+.carrier_4_sunk{
+    background-image: url("/assets/images/fleet/carrier/carrier_4_sunk.png ");
+}
+
+.carrier_5_sunk{
+    background-image: url("/assets/images/fleet/carrier/carrier_5_sunk.png ");
+}
+
+.battleship_1_sunk{
+    background-image: url("/assets/images/fleet/battleship/battleship_1_sunk.png ");
+}
+
+.battleship_2_sunk{
+    background-image: url("/assets/images/fleet/battleship/battleship_2_sunk.png ");
+}
+
+.battleship_3_sunk{
+    background-image: url("/assets/images/fleet/battleship/battleship_3_sunk.png ");
+}
+
+.battleship_4_sunk{
+    background-image: url("/assets/images/fleet/battleship/battleship_4_sunk.png ");
+}
+
+.destroyer_1_sunk{
+    background-image: url("/assets/images/fleet/destroyer/destroyer_1_sunk.png ");
+}
+
+.destroyer_2_sunk{
+    background-image: url("/assets/images/fleet/destroyer/destroyer_2_sunk.png ");
+}
+
+.destroyer_3_sunk{
+    background-image: url("/assets/images/fleet/destroyer/destroyer_3_sunk.png ");
+}
+
+.cruiser_1_sunk{
+    background-image: url("/assets/images/fleet/cruiser/cruiser_1_sunk.png ");
+}
+
+.cruiser_2_sunk{
+    background-image: url("/assets/images/fleet/cruiser/cruiser_2_sunk.png ");
+}
+
+.cruiser_3_sunk{
+    background-image: url("/assets/images/fleet/cruiser/cruiser_3_sunk.png ");
+}
+
+.patrolBoat_1_sunk{
+    background-image: url("/assets/images/fleet/patrol_boat/patrol_boat_1_sunk.png ");
+}
+
+.patrolBoat_2_sunk{
+    background-image: url("/assets/images/fleet/patrol_boat/patrol_boat_2_sunk.png ");
 }
     
