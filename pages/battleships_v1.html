@@ -6,16 +6,18 @@
 
     <title>Battleships V1</title>
 
-    <link rel="stylesheet" href="/styles/v1/general.css?v003">
-    <link rel="stylesheet" href="/styles/v1/initialisation.css?v002">
-    <link rel="stylesheet" href="/styles/v1/setup.css?v009">
-    <link rel="stylesheet" href="/styles/v1/activePlay.css?v001">
-    <link rel="stylesheet" href="/styles/v1/gameOver.css?v001">
+    <link rel="stylesheet" href="/assets/styles/v1/general.css?v003">
+    <link rel="stylesheet" href="/assets/styles/v1/variables.css">
+    <link rel="stylesheet" href="/assets/styles/v1/reset.css">
+    <link rel="stylesheet" href="/assets/styles/v1/initialisation.css?v002">
+    <link rel="stylesheet" href="/assets/styles/v1/setup.css?v010">
+    <link rel="stylesheet" href="/assets/styles/v1/activePlay.css?v001">
+    <link rel="stylesheet" href="/assets/styles/v1/gameOver.css?v001">
 
-    <script type="module" src="/javascript/v1/flow.js"></script>
-    <script type="module" src="/javascript/v1/logic.js"></script>
-    <script type="module" src="/javascript/v1/state.js"></script>
-    <script type="module" src="/javascript/v1/ui.js?v001"></script>
+    <script type="module" src="/assets/javascript/v1/flow.js"></script>
+    <script type="module" src="/assets/javascript/v1/logic.js"></script>
+    <script type="module" src="/assets/javascript/v1/state.js"></script>
+    <script type="module" src="/assets/javascript/v1/ui.js?v001"></script>
 </head>
 
     <body>  
@@ -44,19 +46,21 @@
 
         <div id="setup" class="layer">
             
-            <div class="setup_containerParent">
+            <div id="setup_container">
 
-                <div id="setup_header" class="setup_containerChild span2 alignHorizontalCentre logoMargin">
+                <div id="setup_containerHeader" class="setup_containerChild span2 alignHorizontalCentre logoMargin">
+
                     <img src="/assets/images/logos/logo_text.png" alt="Battleships text logo"">
+
                 </div>
 
-                <div id="setup_inputs" class="setup_containerChild setup_containerChildLeftSide">
+                <div id="setup_input" class="setup_containerChild setup_containerLeftSide">
                     
-                    <div id="setup_inputsGridParentWrapper">
+                    <div id="setup_inputGridWrapper">
 
-                        <h1 class="alignCentre marginBottom">Place your Fleet</h1>
+                        <h1 class="marginBottom">Place your Fleet</h1>
 
-                        <div id="setup_inputsGridParent">
+                        <div id="setup_inputGrid">
 
                             <div class="setup_inputHeader">Ship</div>
                             <div class="setup_inputHeader span2">Starting Coordinate</div>
@@ -326,145 +330,145 @@
 
                 </div>
 
-                <div id="setup_homegrid" class="setup_containerChild setup_containerChildRightSide">
+                <div id="setup_grid" class="setup_containerChild setup_containerRightSide">
                     
-                     <div id="setup_homegridWrapper">
+                     <div id="setup_homeGridWrapper">
                             
-                        <h1 class="alignHorizontalCentre marginBottom">Home Grid</h1>
+                        <h1 class="marginBottom">Home Grid</h1>
 
-                        <div class="setup_homegridParent">
+                        <div id="setup_homeGrid">
 
-                            <div id="Header" class="setup_homegridChild setup_homegridHeader"></div>
-                            <div id="HeaderA" class="setup_homegridChild setup_homegridHeader">A</div>
-                            <div id="HeaderB" class="setup_homegridChild setup_homegridHeader">B</div>
-                            <div id="HeaderC" class="setup_homegridChild setup_homegridHeader">C</div>
-                            <div id="HeaderD" class="setup_homegridChild setup_homegridHeader">D</div>
-                            <div id="HeaderE" class="setup_homegridChild setup_homegridHeader">E</div>
-                            <div id="HeaderF" class="setup_homegridChild setup_homegridHeader">F</div>
-                            <div id="HeaderG" class="setup_homegridChild setup_homegridHeader">G</div>
-                            <div id="HeaderH" class="setup_homegridChild setup_homegridHeader">H</div>
-                            <div id="HeaderI" class="setup_homegridChild setup_homegridHeader">I</div>
-                            <div id="HeaderJ" class="setup_homegridChild setup_homegridHeader">J</div>
+                            <div id="Header" class="setup_homeGridChild setup_homeGridHeader"></div>
+                            <div id="HeaderA" class="setup_homeGridChild setup_homeGridHeader">A</div>
+                            <div id="HeaderB" class="setup_homeGridChild setup_homeGridHeader">B</div>
+                            <div id="HeaderC" class="setup_homeGridChild setup_homeGridHeader">C</div>
+                            <div id="HeaderD" class="setup_homeGridChild setup_homeGridHeader">D</div>
+                            <div id="HeaderE" class="setup_homeGridChild setup_homeGridHeader">E</div>
+                            <div id="HeaderF" class="setup_homeGridChild setup_homeGridHeader">F</div>
+                            <div id="HeaderG" class="setup_homeGridChild setup_homeGridHeader">G</div>
+                            <div id="HeaderH" class="setup_homeGridChild setup_homeGridHeader">H</div>
+                            <div id="HeaderI" class="setup_homeGridChild setup_homeGridHeader">I</div>
+                            <div id="HeaderJ" class="setup_homeGridChild setup_homeGridHeader">J</div>
 
-                            <div id="Header0" class="setup_homegridChild setup_homegridHeader">0</div>
-                            <div id="A0" class="setup_homegridChild water ship carrier_1"></div>
-                            <div id="B0" class="setup_homegridChild water ship battleship_1"></div>
-                            <div id="C0" class="setup_homegridChild water ship destroyer_1"></div>
-                            <div id="D0" class="setup_homegridChild water ship cruiser_1"></div>
-                            <div id="E0" class="setup_homegridChild water ship patrolBoat_1"></div>
-                            <div id="F0" class="setup_homegridChild water"></div>
-                            <div id="G0" class="setup_homegridChild water"></div>
-                            <div id="H0" class="setup_homegridChild water"></div>
-                            <div id="I0" class="setup_homegridChild water"></div>
-                            <div id="J0" class="setup_homegridChild water"></div>
+                            <div id="Header0" class="setup_homeGridChild setup_homeGridHeader">0</div>
+                            <div id="A0" class="setup_homeGridChild water ship carrier_1"></div>
+                            <div id="B0" class="setup_homeGridChild water ship battleship_1"></div>
+                            <div id="C0" class="setup_homeGridChild water ship destroyer_1"></div>
+                            <div id="D0" class="setup_homeGridChild water ship cruiser_1"></div>
+                            <div id="E0" class="setup_homeGridChild water ship patrolBoat_1"></div>
+                            <div id="F0" class="setup_homeGridChild water"></div>
+                            <div id="G0" class="setup_homeGridChild water"></div>
+                            <div id="H0" class="setup_homeGridChild water"></div>
+                            <div id="I0" class="setup_homeGridChild water"></div>
+                            <div id="J0" class="setup_homeGridChild water"></div>
 
-                            <div id="Header1" class="setup_homegridChild setup_homegridHeader">1</div>
-                            <div id="A1" class="setup_homegridChild water ship carrier_2"></div>
-                            <div id="B1" class="setup_homegridChild water ship battleship_2"></div>
-                            <div id="C1" class="setup_homegridChild water ship destroyer_2"></div>
-                            <div id="D1" class="setup_homegridChild water ship cruiser_2"></div>
-                            <div id="E1" class="setup_homegridChild water ship patrolBoat_2"></div>
-                            <div id="F1" class="setup_homegridChild water"></div>
-                            <div id="G1" class="setup_homegridChild water"></div>
-                            <div id="H1" class="setup_homegridChild water"></div>
-                            <div id="I1" class="setup_homegridChild water"></div>
-                            <div id="J1" class="setup_homegridChild water"></div>
+                            <div id="Header1" class="setup_homeGridChild setup_homeGridHeader">1</div>
+                            <div id="A1" class="setup_homeGridChild water ship carrier_2"></div>
+                            <div id="B1" class="setup_homeGridChild water ship battleship_2"></div>
+                            <div id="C1" class="setup_homeGridChild water ship destroyer_2"></div>
+                            <div id="D1" class="setup_homeGridChild water ship cruiser_2"></div>
+                            <div id="E1" class="setup_homeGridChild water ship patrolBoat_2"></div>
+                            <div id="F1" class="setup_homeGridChild water"></div>
+                            <div id="G1" class="setup_homeGridChild water"></div>
+                            <div id="H1" class="setup_homeGridChild water"></div>
+                            <div id="I1" class="setup_homeGridChild water"></div>
+                            <div id="J1" class="setup_homeGridChild water"></div>
 
-                            <div id="Header2" class="setup_homegridChild setup_homegridHeader">2</div>
-                            <div id="A2" class="setup_homegridChild water ship carrier_3"></div>
-                            <div id="B2" class="setup_homegridChild water ship battleship_3"></div>
-                            <div id="C2" class="setup_homegridChild water ship destroyer_3"></div>
-                            <div id="D2" class="setup_homegridChild water ship cruiser_3"></div>
-                            <div id="E2" class="setup_homegridChild water ship patrolBoat_1_sunk hit"></div>
-                            <div id="F2" class="setup_homegridChild water"></div>
-                            <div id="G2" class="setup_homegridChild water"></div>
-                            <div id="H2" class="setup_homegridChild water"></div>
-                            <div id="I2" class="setup_homegridChild water"></div>
-                            <div id="J2" class="setup_homegridChild water"></div>
+                            <div id="Header2" class="setup_homeGridChild setup_homeGridHeader">2</div>
+                            <div id="A2" class="setup_homeGridChild water ship carrier_3"></div>
+                            <div id="B2" class="setup_homeGridChild water ship battleship_3"></div>
+                            <div id="C2" class="setup_homeGridChild water ship destroyer_3"></div>
+                            <div id="D2" class="setup_homeGridChild water ship cruiser_3"></div>
+                            <div id="E2" class="setup_homeGridChild water ship patrolBoat_1_sunk hit"></div>
+                            <div id="F2" class="setup_homeGridChild water"></div>
+                            <div id="G2" class="setup_homeGridChild water"></div>
+                            <div id="H2" class="setup_homeGridChild water"></div>
+                            <div id="I2" class="setup_homeGridChild water"></div>
+                            <div id="J2" class="setup_homeGridChild water"></div>
                             
-                            <div id="Header3" class="setup_homegridChild setup_homegridHeader">3</div>
-                            <div id="A3" class="setup_homegridChild water ship carrier_4"></div>
-                            <div id="B3" class="setup_homegridChild water ship battleship_4"></div>
-                            <div id="C3" class="setup_homegridChild water ship destroyer_1_sunk hit"></div>
-                            <div id="D3" class="setup_homegridChild water ship cruiser_1_sunk hit"></div>
-                            <div id="E3" class="setup_homegridChild water ship patrolBoat_2_sunk hit"></div>
-                            <div id="F3" class="setup_homegridChild water"></div>
-                            <div id="G3" class="setup_homegridChild water"></div>
-                            <div id="H3" class="setup_homegridChild water"></div>
-                            <div id="I3" class="setup_homegridChild water"></div>
-                            <div id="J3" class="setup_homegridChild water"></div>
+                            <div id="Header3" class="setup_homeGridChild setup_homeGridHeader">3</div>
+                            <div id="A3" class="setup_homeGridChild water ship carrier_4"></div>
+                            <div id="B3" class="setup_homeGridChild water ship battleship_4"></div>
+                            <div id="C3" class="setup_homeGridChild water ship destroyer_1_sunk hit"></div>
+                            <div id="D3" class="setup_homeGridChild water ship cruiser_1_sunk hit"></div>
+                            <div id="E3" class="setup_homeGridChild water ship patrolBoat_2_sunk hit"></div>
+                            <div id="F3" class="setup_homeGridChild water"></div>
+                            <div id="G3" class="setup_homeGridChild water"></div>
+                            <div id="H3" class="setup_homeGridChild water"></div>
+                            <div id="I3" class="setup_homeGridChild water"></div>
+                            <div id="J3" class="setup_homeGridChild water"></div>
 
-                            <div id="Header4" class="setup_homegridChild setup_homegridHeader">4</div>
-                            <div id="A4" class="setup_homegridChild water ship carrier_5"></div>
-                            <div id="B4" class="setup_homegridChild water ship battleship_1_sunk hit"></div>
-                            <div id="C4" class="setup_homegridChild water ship destroyer_2_sunk hit"></div>
-                            <div id="D4" class="setup_homegridChild water ship cruiser_2_sunk hit"></div>
-                            <div id="E4" class="setup_homegridChild water"></div>
-                            <div id="F4" class="setup_homegridChild water"></div>
-                            <div id="G4" class="setup_homegridChild water"></div>
-                            <div id="H4" class="setup_homegridChild water"></div>
-                            <div id="I4" class="setup_homegridChild water"></div>
-                            <div id="J4" class="setup_homegridChild water"></div>
+                            <div id="Header4" class="setup_homeGridChild setup_homeGridHeader">4</div>
+                            <div id="A4" class="setup_homeGridChild water ship carrier_5"></div>
+                            <div id="B4" class="setup_homeGridChild water ship battleship_1_sunk hit"></div>
+                            <div id="C4" class="setup_homeGridChild water ship destroyer_2_sunk hit"></div>
+                            <div id="D4" class="setup_homeGridChild water ship cruiser_2_sunk hit"></div>
+                            <div id="E4" class="setup_homeGridChild water"></div>
+                            <div id="F4" class="setup_homeGridChild water"></div>
+                            <div id="G4" class="setup_homeGridChild water"></div>
+                            <div id="H4" class="setup_homeGridChild water"></div>
+                            <div id="I4" class="setup_homeGridChild water"></div>
+                            <div id="J4" class="setup_homeGridChild water"></div>
 
-                            <div id="Header5" class="setup_homegridChild setup_homegridHeader">5</div>
-                            <div id="A5" class="setup_homegridChild water ship carrier_1_sunk hit"></div>
-                            <div id="B5" class="setup_homegridChild water ship battleship_2_sunk hit"></div>
-                            <div id="C5" class="setup_homegridChild water ship destroyer_3_sunk hit"></div>
-                            <div id="D5" class="setup_homegridChild water ship cruiser_3_sunk hit"></div>
-                            <div id="E5" class="setup_homegridChild water"></div>
-                            <div id="F5" class="setup_homegridChild water"></div>
-                            <div id="G5" class="setup_homegridChild water"></div>
-                            <div id="H5" class="setup_homegridChild water"></div>
-                            <div id="I5" class="setup_homegridChild water"></div>
-                            <div id="J5" class="setup_homegridChild water"></div>
+                            <div id="Header5" class="setup_homeGridChild setup_homeGridHeader">5</div>
+                            <div id="A5" class="setup_homeGridChild water ship carrier_1_sunk hit"></div>
+                            <div id="B5" class="setup_homeGridChild water ship battleship_2_sunk hit"></div>
+                            <div id="C5" class="setup_homeGridChild water ship destroyer_3_sunk hit"></div>
+                            <div id="D5" class="setup_homeGridChild water ship cruiser_3_sunk hit"></div>
+                            <div id="E5" class="setup_homeGridChild water"></div>
+                            <div id="F5" class="setup_homeGridChild water"></div>
+                            <div id="G5" class="setup_homeGridChild water"></div>
+                            <div id="H5" class="setup_homeGridChild water"></div>
+                            <div id="I5" class="setup_homeGridChild water"></div>
+                            <div id="J5" class="setup_homeGridChild water"></div>
 
-                            <div id="Header6" class="setup_homegridChild setup_homegridHeader">6</div>
-                            <div id="A6" class="setup_homegridChild water ship carrier_2_sunk hit"></div>
-                            <div id="B6" class="setup_homegridChild water ship battleship_3_sunk hit"></div>
-                            <div id="C6" class="setup_homegridChild water"></div>
-                            <div id="D6" class="setup_homegridChild water"></div>
-                            <div id="E6" class="setup_homegridChild water"></div>
-                            <div id="F6" class="setup_homegridChild water"></div>
-                            <div id="G6" class="setup_homegridChild water"></div>
-                            <div id="H6" class="setup_homegridChild water"></div>
-                            <div id="I6" class="setup_homegridChild water"></div>
-                            <div id="J6" class="setup_homegridChild water"></div>
+                            <div id="Header6" class="setup_homeGridChild setup_homeGridHeader">6</div>
+                            <div id="A6" class="setup_homeGridChild water ship carrier_2_sunk hit"></div>
+                            <div id="B6" class="setup_homeGridChild water ship battleship_3_sunk hit"></div>
+                            <div id="C6" class="setup_homeGridChild water"></div>
+                            <div id="D6" class="setup_homeGridChild water"></div>
+                            <div id="E6" class="setup_homeGridChild water"></div>
+                            <div id="F6" class="setup_homeGridChild water"></div>
+                            <div id="G6" class="setup_homeGridChild water"></div>
+                            <div id="H6" class="setup_homeGridChild water"></div>
+                            <div id="I6" class="setup_homeGridChild water"></div>
+                            <div id="J6" class="setup_homeGridChild water"></div>
 
-                            <div id="Header7" class="setup_homegridChild setup_homegridHeader">7</div>
-                            <div id="A7" class="setup_homegridChild water ship carrier_3_sunk hit"></div>
-                            <div id="B7" class="setup_homegridChild water ship battleship_4_sunk hit"></div>
-                            <div id="C7" class="setup_homegridChild water"></div>
-                            <div id="D7" class="setup_homegridChild water"></div>
-                            <div id="E7" class="setup_homegridChild water"></div>
-                            <div id="F7" class="setup_homegridChild water"></div>
-                            <div id="G7" class="setup_homegridChild water"></div>
-                            <div id="H7" class="setup_homegridChild water"></div>
-                            <div id="I7" class="setup_homegridChild water"></div>
-                            <div id="J7" class="setup_homegridChild water"></div>
+                            <div id="Header7" class="setup_homeGridChild setup_homeGridHeader">7</div>
+                            <div id="A7" class="setup_homeGridChild water ship carrier_3_sunk hit"></div>
+                            <div id="B7" class="setup_homeGridChild water ship battleship_4_sunk hit"></div>
+                            <div id="C7" class="setup_homeGridChild water"></div>
+                            <div id="D7" class="setup_homeGridChild water"></div>
+                            <div id="E7" class="setup_homeGridChild water"></div>
+                            <div id="F7" class="setup_homeGridChild water"></div>
+                            <div id="G7" class="setup_homeGridChild water"></div>
+                            <div id="H7" class="setup_homeGridChild water"></div>
+                            <div id="I7" class="setup_homeGridChild water"></div>
+                            <div id="J7" class="setup_homeGridChild water"></div>
 
-                            <div id="Header8" class="setup_homegridChild setup_homegridHeader">8</div>
-                            <div id="A8" class="setup_homegridChild water ship carrier_4_sunk hit"></div>
-                            <div id="B8" class="setup_homegridChild water"></div>
-                            <div id="C8" class="setup_homegridChild water"></div>
-                            <div id="D8" class="setup_homegridChild water"></div>
-                            <div id="E8" class="setup_homegridChild water"></div>
-                            <div id="F8" class="setup_homegridChild water miss"></div>
-                            <div id="G8" class="setup_homegridChild water"></div>
-                            <div id="H8" class="setup_homegridChild water"></div>
-                            <div id="I8" class="setup_homegridChild water"></div>
-                            <div id="J8" class="setup_homegridChild water"></div>
+                            <div id="Header8" class="setup_homeGridChild setup_homeGridHeader">8</div>
+                            <div id="A8" class="setup_homeGridChild water ship carrier_4_sunk hit"></div>
+                            <div id="B8" class="setup_homeGridChild water"></div>
+                            <div id="C8" class="setup_homeGridChild water"></div>
+                            <div id="D8" class="setup_homeGridChild water"></div>
+                            <div id="E8" class="setup_homeGridChild water"></div>
+                            <div id="F8" class="setup_homeGridChild water miss"></div>
+                            <div id="G8" class="setup_homeGridChild water"></div>
+                            <div id="H8" class="setup_homeGridChild water"></div>
+                            <div id="I8" class="setup_homeGridChild water"></div>
+                            <div id="J8" class="setup_homeGridChild water"></div>
 
-                            <div id="Header9" class="setup_homegridChild setup_homegridHeader">9</div>
-                            <div id="A9" class="setup_homegridChild water ship carrier_5_sunk hit"></div>
-                            <div id="B9" class="setup_homegridChild water"></div>
-                            <div id="C9" class="setup_homegridChild water"></div>
-                            <div id="D9" class="setup_homegridChild water"></div>
-                            <div id="E9" class="setup_homegridChild water miss"></div>
-                            <div id="F9" class="setup_homegridChild water ship carrier_5 horizontal"></div>
-                            <div id="G9" class="setup_homegridChild water ship carrier_4 horizontal"></div>
-                            <div id="H9" class="setup_homegridChild water ship carrier_3 horizontal"></div>
-                            <div id="I9" class="setup_homegridChild water ship carrier_2 horizontal"></div>
-                            <div id="J9" class="setup_homegridChild water ship carrier_1 horizontal"></div>
+                            <div id="Header9" class="setup_homeGridChild setup_homeGridHeader">9</div>
+                            <div id="A9" class="setup_homeGridChild water ship carrier_5_sunk hit"></div>
+                            <div id="B9" class="setup_homeGridChild water"></div>
+                            <div id="C9" class="setup_homeGridChild water"></div>
+                            <div id="D9" class="setup_homeGridChild water"></div>
+                            <div id="E9" class="setup_homeGridChild water miss"></div>
+                            <div id="F9" class="setup_homeGridChild water ship carrier_5 horizontal"></div>
+                            <div id="G9" class="setup_homeGridChild water ship carrier_4 horizontal"></div>
+                            <div id="H9" class="setup_homeGridChild water ship carrier_3 horizontal"></div>
+                            <div id="I9" class="setup_homeGridChild water ship carrier_2 horizontal"></div>
+                            <div id="J9" class="setup_homeGridChild water ship carrier_1 horizontal"></div>
 
                         </div>
 
@@ -478,19 +482,60 @@
 
         <div id="activePlay" class="layer" >
 
-            <div id="activePlay_containerParent">
+            <div id="activePlay_container">
 
-                <div id="activePlay_header" class="span3 alignHorizontalCentre logoMargin">
-                    <img src="/assets/images/logo_text.png" alt="Battleships text logo"">
+                <div id="activePlay_containerHeader" class="activePlay_containerChild span3 logoMargin alignHorizontalCentre">
+
+                    <img src="/assets/images/logos/logo_text.png" alt="Battleships text logo"">
+
                 </div>
 
-                <div class="activePlay_container activePlay_containerChildLeftSide">Left</div>
+                <div id="activePlay_containerLeftSide" class="activePlay_containerChild alignHorizontalCentre">
+                            
+                    left
 
-                <div class="activePlay_container activePlay_containerChildMiddle">Middle</div>
+                </div>
 
-                <div class="activePlay_container activePlay_containerChildRightSide">Right</div>
+                <div id="activePlay_containerMiddle" class="activePlay_containerChild activePlay_containerMiddle alignHorizontalCentre">
 
-                <div id="activePlay_footer" class="span3 alignHorizontalCentre alignVerticalMiddle">footer</div>
+                    <div id="playerActionWrapper">
+
+                        <h1>Player To Take Shot</h1>
+
+                        <div id="activePlay_playerActionGrid">
+
+                            <h1 class="span2">Choose Coordinate of Shot</h1>
+
+                            <input type="text" value="Grid Letter:">
+
+                            <select id="">
+                                <option value="" disabled selected>select</option>
+                            </select>
+
+                            <input type="text" value="Grid Number:">
+
+                            <select id="">
+                                <option value="" disabled selected>select</option>
+                            </select>
+
+                            <button>Take shot</button>
+
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div id="activePlay_containerRightSide" class="activePlay_containerChild alignHorizontalCentre">
+                            
+                    Right
+                
+                </div>
+
+                <div id="activePlay_containerFooter" class="activePlay_containerChild span3 alignHorizontalCentre alignVerticalMiddle">
+                                                            
+                    footer
+                
+                </div>
                 
             </div>
 

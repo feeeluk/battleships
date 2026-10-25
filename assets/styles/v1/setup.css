@@ -1,9 +1,9 @@
 /* #setup {
 } */
 
-/* CONTAINER */
+/* PAGE CONTAINER */
 
-.setup_containerParent{
+#setup_container{
     display: grid;
     grid-template-columns: minmax(0, 5fr) minmax(0, 5fr);
     grid-template-rows: 15vh 80vh 5vh;
@@ -16,36 +16,36 @@
     align-items: start;
 }
 
-    .setup_containerChildLeftSide{
-        justify-content: right;
-        margin-right: 50px;
-    }
-    
-    .setup_containerChildRightSide{
-        justify-content: left;
-        margin-left: 50px;
-    }
-
-.setup_containerChild img {
+#setup_containerHeader img {
   max-width: 100%;
   max-height: 100%;
   height: auto;
 }
 
-/* PLACEMENT INPUTS */
-
-#setup_inputsGridParentWrapper{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.setup_containerLeftSide{
+    justify-content: right;
+    margin-right: 50px;
 }
 
-#setup_inputsGridParent{
+.setup_containerRightSide{
+    justify-content: left;
+    margin-left: 50px;
+}
+
+/* PLACEMENT INPUTS */
+
+#setup_inputGrid{
     display: grid;
     grid-template-columns: 30% 14% 14% 24% 18%;
     gap: 2px;
     width: 100%;
+}
+
+#setup_inputGridWrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .setup_inputHeader{
@@ -90,7 +90,13 @@
 
 /* HOMEGRID */
 
-.setup_homegridParent{
+#setup_homeGridWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#setup_homeGrid{
     display: grid;
     grid-template-columns: repeat(11, minmax(0, 1fr));
     grid-template-rows: repeat(11, minmax(0, 1fr));
@@ -100,13 +106,13 @@
     background-color: white;
 }
 
-.setup_homegridChild{
+.setup_homeGridChild{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.setup_homegridHeader{
+.setup_homeGridHeader{
     background-color: #777777;
     color: white;
     font-weight: bold;

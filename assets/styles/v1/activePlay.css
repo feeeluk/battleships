@@ -1,0 +1,57 @@
+/* #activePlay {
+} */
+
+/* PAGE CONTAINER */
+
+#activePlay_container{
+    display: grid;
+    grid-template-columns: minmax(0, 6fr) minmax(0, 3fr) minmax(0, 6fr);
+    grid-template-rows: 15vh 80vh 5vh;
+    width: 100%;
+    background-color: green;
+}
+
+    .activePlay_containerChild{
+        display: flex;
+    }
+
+#activePlay_containerHeader{
+    background-color: pink;
+}
+
+    #activePlay_containerHeader img{
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    }
+
+#activePlay_containerLeftSide{
+    background-color: blue;
+}
+
+#activePlay_containerMiddle{
+    background-color: purple;
+}
+
+#activePlay_containerRightSide{
+    background-color: red;
+}
+
+#activePlay_containerFooter{
+    background-color: orange;
+}
+
+/* PLAYER ACTION */
+
+#playerActionWrapper{
+    
+}
+
+#activePlay_playerActionGrid{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: 50px 30px 30px 30px 500px;
+    width: 100%;
+    background-color: hotpink;
+    gap: 2px;
+}

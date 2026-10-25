@@ -109,7 +109,7 @@ input[type="text"]{
 }
 
 .water{
-    background-color: lightblue;
+    background-color: blue;
     /* background-image: url("");
     background-repeat: no-repeat;
     background-position: center; */
@@ -138,10 +138,6 @@ input[type="text"]{
     background-repeat: no-repeat;
     background-position: center;
     /* background-size: contain; */
-}
-
-.sunk{
-    background-color: red;
 }
 
 .horizontal{
