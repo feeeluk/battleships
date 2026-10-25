@@ -65,22 +65,32 @@ input[type="text"]{
 }
 
 .alignVerticalTop{
+    display: flex;
+    flex-direction: row;
     align-items: start;
 }
 
 .alignVerticalMiddle{
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
 .alignHorizontalLeft{
+    display: flex;
+    flex-direction: row;
     justify-content: Left;
 }
 
 .alignHorizontalCentre{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
 .alignHorizontalRight{
+    display: flex;
+    flex-direction: row;
     justify-content: right;
 }
 

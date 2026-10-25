@@ -11,9 +11,8 @@
     background-color: green;
 }
 
-    .activePlay_containerChild{
-        display: flex;
-    }
+    /* .activePlay_containerChild{
+    } */
 
 #activePlay_containerHeader{
     background-color: pink;
@@ -44,14 +43,24 @@
 /* PLAYER ACTION */
 
 #playerActionWrapper{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #activePlay_playerActionGrid{
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: 50px 30px 30px 30px 500px;
-    width: 100%;
+    grid-template-rows: 50px 30px 30px 50px;
+    width: 80%;
     background-color: hotpink;
     gap: 2px;
+}
+
+#activePlay_playerActionFeedback{
+    margin: 50px 0;
+    width: 80%;
+    height: 100%;
+    background-color: chocolate;
+    display: flex;
 }

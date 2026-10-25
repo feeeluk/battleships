@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/assets/styles/v1/reset.css">
     <link rel="stylesheet" href="/assets/styles/v1/initialisation.css?v002">
     <link rel="stylesheet" href="/assets/styles/v1/setup.css?v010">
-    <link rel="stylesheet" href="/assets/styles/v1/activePlay.css?v001">
+    <link rel="stylesheet" href="/assets/styles/v1/activePlay.css?v002">
     <link rel="stylesheet" href="/assets/styles/v1/gameOver.css?v001">
 
     <script type="module" src="/assets/javascript/v1/flow.js"></script>
@@ -484,27 +484,27 @@
 
             <div id="activePlay_container">
 
-                <div id="activePlay_containerHeader" class="activePlay_containerChild span3 logoMargin alignHorizontalCentre">
+                <div id="activePlay_containerHeader" class="span3 logoMargin alignHorizontalCentre">
 
                     <img src="/assets/images/logos/logo_text.png" alt="Battleships text logo"">
 
                 </div>
 
-                <div id="activePlay_containerLeftSide" class="activePlay_containerChild alignHorizontalCentre">
+                <div id="activePlay_containerLeftSide" class="alignHorizontalCentre">
                             
                     left
 
                 </div>
 
-                <div id="activePlay_containerMiddle" class="activePlay_containerChild activePlay_containerMiddle alignHorizontalCentre">
+                <div id="activePlay_containerMiddle" class="activePlay_containerMiddle alignHorizontalCentre">
 
                     <div id="playerActionWrapper">
 
-                        <h1>Player To Take Shot</h1>
+                        <h1 class="marginBottom">Player's Turn</h1>
 
                         <div id="activePlay_playerActionGrid">
 
-                            <h1 class="span2">Choose Coordinate of Shot</h1>
+                            <h1 class="span2 alignHorizontalCentre">Select enemy target</h1>
 
                             <input type="text" value="Grid Letter:">
 
@@ -518,20 +518,25 @@
                                 <option value="" disabled selected>select</option>
                             </select>
 
-                            <button>Take shot</button>
+                            <button class="span2 marginTop">Fire at target</button>    
 
                         </div>
+
+                        <div id="activePlay_playerActionFeedback">
+                            Feedback
+                        </div>
+
                     </div>
                 
                 </div>
 
-                <div id="activePlay_containerRightSide" class="activePlay_containerChild alignHorizontalCentre">
+                <div id="activePlay_containerRightSide" class="alignHorizontalCentre">
                             
                     Right
                 
                 </div>
 
-                <div id="activePlay_containerFooter" class="activePlay_containerChild span3 alignHorizontalCentre alignVerticalMiddle">
+                <div id="activePlay_containerFooter" class="span3 alignHorizontalCentre alignVerticalMiddle">
                                                             
                     footer
                 
