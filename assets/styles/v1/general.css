@@ -118,6 +118,22 @@ input[type="text"]{
     margin-bottom: 20px;
 }
 
+.feedbackError{
+    background-color: var(--errorBackground);
+}
+
+.feedbackMiss{
+    background-color: var(--missBackground);
+}
+
+.feedbackHit{
+    background-color: var(--hitBackground);
+}
+
+.feedbackSunk{
+    background-color: var(--sunkBackground);
+}
+
 .water{
     background-color: blue;
     /* background-image: url("");

@@ -5,7 +5,18 @@
     /* ### INPUTS ### */
 
     
-    /* ### GRID ### */
+    /* ### ERROR ### */
+    --errorBackground: blueviolet;
 
-    /* --test: value; */
+
+    /* ### MISS ### */
+    --missBackground: blue;
+
+
+    /* ### HIT ### */
+    --hitBackground: orange;
+
+
+    /* ### SUNK ### */
+    --sunkBackground: red;
 }
