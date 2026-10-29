@@ -40,6 +40,37 @@
     background-color: orange;
 }
 
+/* HOME GRID */
+
+#activePlay_homeGridWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#activePlay_homeGrid{
+    display: grid;
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+    grid-template-rows: repeat(11, minmax(0, 1fr));
+    height: 70vh;
+    aspect-ratio: 1 / 1;
+    gap: 1px;
+    background-color: white;
+}
+
+.activePlay_homeGridChild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activePlay_homeGridHeader{
+    background-color: #777777;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
 /* PLAYER ACTION */
 
 #playerActionWrapper{
@@ -69,4 +100,35 @@
     flex-direction: column;
     align-items: center;
     
+}
+
+/* ### TARGET GRID ### */
+
+#activePlay_targetGridWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#activePlay_targetGrid{
+    display: grid;
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+    grid-template-rows: repeat(11, minmax(0, 1fr));
+    height: 70vh;
+    aspect-ratio: 1 / 1;
+    gap: 1px;
+    background-color: white;
+}
+
+.activePlay_targetGridChild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activePlay_targetGridHeader{
+    background-color: #777777;
+    color: white;
+    font-weight: bold;
+    font-size: large;
 }
