@@ -8,14 +8,6 @@
     grid-template-columns: minmax(0, 6fr) minmax(0, 3fr) minmax(0, 6fr);
     grid-template-rows: 15vh 80vh 5vh;
     width: 100%;
-    background-color: green;
-}
-
-    /* .activePlay_containerChild{
-    } */
-
-#activePlay_containerHeader{
-    background-color: pink;
 }
 
     #activePlay_containerHeader img{
@@ -23,22 +15,6 @@
     max-height: 100%;
     height: auto;
     }
-
-#activePlay_containerLeftSide{
-    background-color: blue;
-}
-
-#activePlay_containerMiddle{
-    background-color: purple;
-}
-
-#activePlay_containerRightSide{
-    background-color: red;
-}
-
-#activePlay_containerFooter{
-    background-color: orange;
-}
 
 /* HOME GRID */
 
@@ -83,12 +59,14 @@
 #activePlay_playerActionGrid{
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: 50px 30px 30px 50px;
+    grid-template-rows: 70px 30px 30px 50px;
     gap: 2px;
     box-sizing: border-box;
-    width: 80%;
-    padding: 5px;
-    background-color: hotpink;
+    width: 90%;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    background-color: #812626;
+    color: #000;
 }
 
 #activePlay_playerActionFeedback{
