@@ -22,28 +22,25 @@
 
     <body>  
 
-        <div id="initialisation" class="layer alignHorizontalCentre">
+        <div id="initialisation" class="layer alignHorizontalCentre alignVerticalMiddle">
 
             <div id="initialisation_container">
                 
-                <div>
+                <div id="initialisation_containerBackground">
 
-                    <img src="/assets/images/logos/logo.png" alt="Battleships logo" width="800px">
+                    <img src="/assets/images/logos/logo.png" alt="Battleships logo" class="logo">
 
                 </div>
 
-                <div>
+                <div id="initialisation_containerForeground">
 
-                    <select id="gameMode" name="gameMode">
+                    <select id="gameMode" name="gameMode" class="marginBottom">
 
                         <option value="" disabled selected>Choose Game Mode</option>
 
-                        <option value="UvC">User vs Computer</option>
+                        <option value="userVsComputer">User vs Computer</option>
 
                     </select>
-                </div>
-
-                <div>
 
                     <button id="startGameButton">Start Game</button>
 
@@ -864,12 +861,12 @@
 
         <div id="gameOver" class="layer alignHorizontalCentre alignVerticalMiddle" >
             
-            <div id="gameOver_box" class="victory">
+            <div id="gameOver_box" class="defeat">
 
                 <div id="gameOver_boxBackground">
 
-                    <img src="/assets/images/logos/fleet.png" alt="Fleet" class="fleetImage victoryMarker">
-                    <img src="/assets/images/logos/fleet_destroyed.png" alt="Fleet destroyed" class="fleetImage defeatMarker">
+                    <img src="/assets/images/logos/fleet.png" alt="Fleet" class="logo fleetImage victoryMarker">
+                    <img src="/assets/images/logos/fleet_destroyed.png" alt="Fleet destroyed" class="logo fleetImage defeatMarker">
 
                 </div>
                 

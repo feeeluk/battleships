@@ -49,6 +49,11 @@ input[type="text"]{
     display: flex;
 }
 
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
 .disabled{
     text-decoration: line-through;
     color: #bbb;
