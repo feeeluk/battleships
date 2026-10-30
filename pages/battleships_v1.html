@@ -27,19 +27,28 @@
             <div id="initialisation_container">
                 
                 <div>
+
                     <img src="/assets/images/logos/logo.png" alt="Battleships logo" width="800px">
+
                 </div>
 
                 <div>
+
                     <select id="gameMode" name="gameMode">
+
                         <option value="" disabled selected>Choose Game Mode</option>
+
                         <option value="UvC">User vs Computer</option>
+
                     </select>
                 </div>
 
                 <div>
+
                     <button id="startGameButton">Start Game</button>
+
                 </div>
+
             </div>
             
         </div>
@@ -853,9 +862,49 @@
 
         </div>
 
-        <div id="gameOver" class="layer alignTop" >
-            <h1>GameOver</h1>
-            <button>Reset</button>
+        <div id="gameOver" class="layer alignHorizontalCentre alignVerticalMiddle" >
+            
+            <div id="gameOver_box" class="victory">
+
+                <div id="gameOver_boxBackground">
+
+                    <img src="/assets/images/logos/fleet.png" alt="Fleet" class="fleetImage victoryMarker">
+                    <img src="/assets/images/logos/fleet_destroyed.png" alt="Fleet destroyed" class="fleetImage defeatMarker">
+
+                </div>
+                
+
+                <div id="gameOver_boxForeground">
+
+                    <!-- Row 1 -->
+                    <div class="gameOver_boxForegroundRow1 span4"></div>
+
+                    <!-- Row 2 -->
+                    <div class="gameOver_boxForegroundRow2"></div>
+
+                    <div class="gameOver_boxForegroundRow2 span2">
+
+                        <div id="gameOver_boxForegroundRow2Flex">
+
+                            <img src="/assets/images/logos/victory.png" alt="victory badge" class="badge victoryMarker">
+                            <img src="/assets/images/logos/defeat.png" alt="defeated badge" class="badge defeatMarker">
+                        
+                            <button id="exitButton" class="marginTop">Exit</button>
+                            <button id="playAgainButton" class="marginTop">Play Again</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gameOver_boxForegroundRow2"></div>
+
+                    <!-- Row 3 -->
+                    <div class="gameOver_boxForegroundRow3 span4"></div>
+
+                </div>
+
+            </div>
+
         </div>   
 
     </body>

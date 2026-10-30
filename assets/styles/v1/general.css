@@ -88,6 +88,12 @@ input[type="text"]{
     justify-content: center;
 }
 
+.alignHorizontalSpaceBetween{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
 .alignHorizontalRight{
     display: flex;
     flex-direction: row;
@@ -100,6 +106,10 @@ input[type="text"]{
 
 .span3{
     grid-column: span 3;
+}
+
+.span4{
+    grid-column: span 4;
 }
 
 .span5{
