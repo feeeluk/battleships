@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="/assets/styles/v1/activePlay.css?v003">
     <link rel="stylesheet" href="/assets/styles/v1/gameOver.css?v001">
 
+    <script type="module" src="/assets/javascript/v1/main.js"></script>
+    <script type="module" src="/assets/javascript/v1/controllers.js"></script>
     <script type="module" src="/assets/javascript/v1/flow.js"></script>
     <script type="module" src="/assets/javascript/v1/logic.js"></script>
     <script type="module" src="/assets/javascript/v1/state.js"></script>
-    <script type="module" src="/assets/javascript/v1/ui.js?v001"></script>
+    <script type="module" src="/assets/javascript/v1/ui.js"></script>
 </head>
 
     <body>  
@@ -34,15 +36,7 @@
 
                 <div id="initialisation_containerForeground">
 
-                    <select id="gameMode" name="gameMode" class="marginBottom">
-
-                        <option value="" disabled selected>Choose Game Mode</option>
-
-                        <option value="userVsComputer">User vs Computer</option>
-
-                    </select>
-
-                    <button id="startGameButton">Start Game</button>
+                    <button id="initialisationStartGameButton">Start Game</button>
 
                 </div>
 

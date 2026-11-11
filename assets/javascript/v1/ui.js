@@ -1,21 +1,24 @@
-// THE VIEW
-// The sole owner of the DOM and the 4 CSS screen layers.
-// The only file allowed to query the DOM. It controls showing and hiding your 5 CSS layers (general.css, initialisation.css, setup.css, activePlay.css, gameOver.css) and rendering text to the screen. It takes data passed to it and displays it.
+// USER INTERFACES - The view. The sole owner of the DOM and the 4 CSS screen layers. The only file allowed to query the DOM. It controls showing and hiding the CSS layers and rendering text to the screen. It takes data passed to it and displays it.
 
-export function showUI(layerName) {
-    console.log(`Switching view to: ${layerName}`);
+// GAME WIDE
 
-    // Get all elements with the class 'layer' and hide them
-    const layers = document.querySelectorAll('.layer');
-    layers.forEach(layer => {
-        layer.style.visibility = "hidden";
-    });
+    export function showLayer(layerName) {
+        console.log(`UI layer => ${layerName}`);
 
-    // Find the specific target layer and make it visible
-    const targetLayer = document.getElementById(layerName);
-    if (targetLayer) {
-        targetLayer.style.visibility = "visible";
-    } else {
-        console.error(`Layer with ID "${layerName}" not found!`);
+        // Get all elements with the class 'layer' and hide them
+        const layers = document.querySelectorAll('.layer');
+        layers.forEach(layer => {
+            layer.style.visibility = "hidden";
+        });
+
+        // Find the specific target layer and make it visible
+        const targetLayer = document.getElementById(layerName);
+        if (targetLayer) {
+            targetLayer.style.visibility = "visible";
+        } else {
+            console.error(`Layer with ID "${layerName}" not found!`);
+        }
     }
-}
+
+// INITIALISATION
+
