@@ -8,16 +8,13 @@
 
 // FUNCTIONS
 
-    // initialisation
-    
-    export function initialiseControllers(){
+    // ADD
+    export function addEventListeners(){
         initialisationStartGameButton.addEventListener("click", startGame);
     }
 
-    // setup
+    // REMOVE
+    export function removeEventListeners(){
+        initialisationStartGameButton.removeEventListener("click", startGame);
+    }
 
-
-    // activePlay
-
-
-    // gameOver

@@ -4,21 +4,7 @@
     import { showLayer } from './ui.js';
 
 // VARIABLES
-    let state = {
-        player: {
-                homeGrid: null,
-                targetGrid: null,
-                ships: null,
-        },
-
-        computer: {
-            homeGrid: null,
-            targetGrid: null,
-            ships: null,
-        },
-
-        layer: null, 
-    }
+    let state;
 
 // FUNCTIONS
 
@@ -37,6 +23,7 @@
             },
 
             layer: null, 
+            currentTurn: "player",
         }
     }
 
@@ -107,5 +94,7 @@
         state.player.ships = createFleet();
         state.computer.ships = createFleet();
     }
+
+    function endTurn(){}
 
     

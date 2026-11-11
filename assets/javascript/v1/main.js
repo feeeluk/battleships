@@ -3,13 +3,17 @@
 
 // IMPORT FUNCTIONS
     import { resetState } from "./state.js";
+    import { resetUI } from "./ui.js";
+    import { removeEventListeners } from './controllers.js';
     import { changeState } from "./state.js";
-    import { initialiseControllers } from './controllers.js';
+    import { addEventListeners } from './controllers.js';
 
+//  FUNCTIONS
 
-// Reset
+// Reset game
     resetState();  
-    // reset UI including clearing the console, removing eventlisteners,
+    resetUI();
+    removeEventListeners();
 
 
 // Change state
@@ -17,4 +21,6 @@
 
 
 // Initialise controllers
-    initialiseControllers();
+    addEventListeners();
+
+    

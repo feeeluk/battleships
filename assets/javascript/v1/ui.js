@@ -1,5 +1,11 @@
 // USER INTERFACES - The view. The sole owner of the DOM and the 4 CSS screen layers. The only file allowed to query the DOM. It controls showing and hiding the CSS layers and rendering text to the screen. It takes data passed to it and displays it.
 
+// RESET
+
+    export function resetUI(){
+        console.clear();
+    }
+
 // GAME WIDE
 
     export function showLayer(layerName) {
