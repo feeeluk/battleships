@@ -2,6 +2,7 @@
 
 
 // IMPORT VARIABLES
+    import { state } from './state.js';
 
 // IMPORT FUNCTIONS
     import { initialiseGrids } from './state.js';
@@ -16,13 +17,11 @@
         
         console.log("initialise grids");
         initialiseGrids();
-        
 
         console.log("initialise fleet");
         initialiseFleet();
 
-        // Change state to setup
         changeState("setup");
 
-        
+        console.log(`current turn: ${state.currentTurn}`)
     }

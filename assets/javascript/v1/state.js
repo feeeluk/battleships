@@ -4,7 +4,7 @@
     import { showLayer } from './ui.js';
 
 // VARIABLES
-    let state;
+    export let state;
 
 // FUNCTIONS
 
