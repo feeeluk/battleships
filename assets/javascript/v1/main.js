@@ -2,14 +2,15 @@
 
 
 // IMPORT FUNCTIONS
+    import { resetState } from "./state.js";
     import { changeState } from "./state.js";
     import { initialiseControllers } from './controllers.js';
 
 
 // Reset
-    // reset data/state
-    
+    resetState();  
     // reset UI including clearing the console, removing eventlisteners,
+
 
 // Change state
     changeState("initialisation");

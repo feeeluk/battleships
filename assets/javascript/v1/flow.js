@@ -5,6 +5,7 @@
 
 // IMPORT FUNCTIONS
     import { initialiseGrids } from './state.js';
+    import { initialiseFleet } from './state.js';
     import { changeState } from './state.js';
 
 // INITIALISATION
@@ -17,7 +18,8 @@
         initialiseGrids();
         
 
-        console.log("initialise ships");
+        console.log("initialise fleet");
+        initialiseFleet();
 
         // Change state to setup
         changeState("setup");
