@@ -17,7 +17,7 @@
 
 
 // Change state
-    changeState("initialisation");
+    changeState("activePlay");
 
 
 // Initialise controllers

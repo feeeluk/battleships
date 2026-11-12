@@ -50,7 +50,7 @@
 
                 <div id="setup_containerHeader" class="setup_containerChild span2 alignHorizontalCentre logoMargin">
 
-                    <img src="/assets/images/logos/logo_text.png" alt="Battleships text logo"">
+                    <img src="/assets/images/logos/logo_text.png" alt="Battleships text logo">
 
                 </div>
 
@@ -486,7 +486,7 @@
 
                 <div id="activePlay_containerHeader" class="span3 logoMargin alignHorizontalCentre">
 
-                    <img src="/assets/images/logos/logo_text.png" alt="Battleships text logo"">
+                    <img src="/assets/images/logos/logo_text.png" alt="Battleships text logo">
 
                 </div>
 
@@ -642,14 +642,14 @@
 
                         <h1 class="marginBottom">Player's Turn</h1>
 
-                        <div id="activePlay_playerActionGrid">
+                        <div id="activePlay_playerAction">
 
                             <h2 class="span2 alignHorizontalCentre">Select Target</h2>
 
-                            <input type="text" value="Grid Letter:">
+                            <label for="activePlay_shotCoordinateX">X Axis (horizontal):</label>
 
-                            <select id="activePlay_shotCoordinateX">
-                                <option value="" disabled selected>X (horizontal)</option>
+                            <select id="activePlay_shotCoordinateX" class="width50Percent">
+                                <option value="" disabled selected>Letter</option>
                                 <option value="A">A</option>
                                 <option value="B">B</option>
                                 <option value="C">C</option>
@@ -662,10 +662,10 @@
                                 <option value="J">J</option>
                             </select>
 
-                            <input type="text" value="Grid Number:">
+                            <label for="activePlay_shotCoordinateY" class="">Y Axis (vertical):</label>
 
-                            <select id="activePlay_shotCoordinateY">
-                                <option value="" disabled selected>Y (vertical)</option>
+                            <select id="activePlay_shotCoordinateY" class="width50Percent">
+                                <option value="" disabled selected>Number</option>
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -679,7 +679,7 @@
 
                             </select>
 
-                            <button class="span2 marginTop">Fire at target</button>    
+                            <button id="activePlay_fireAtTarget" class="marginTop disabled">Fire at target</button>    
 
                         </div>
 
@@ -689,7 +689,7 @@
 
                             <h3 class="marginTop">DETAILS</h3>
 
-                            <button>OK</button>
+                            <button id="activePlay_playerActionFeedbackOkButton">OK</button>
 
                         </div>
 

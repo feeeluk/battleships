@@ -19,6 +19,7 @@ button{
 button.disabled{
     border: solid 2px #ddd;
     border-radius: 5px;
+    background-color: #999;
 }
 
 select{
@@ -63,6 +64,10 @@ input[type="text"]{
     cursor: default;
     user-select: none;
     pointer-events: none;
+}
+.width50Percent{
+    margin: 5px 0 10px 0;
+    min-width: 50%;
 }
 
 .logoMargin{
