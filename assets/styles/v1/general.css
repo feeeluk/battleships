@@ -19,7 +19,6 @@ button{
 button.disabled{
     border: solid 2px #ddd;
     border-radius: 5px;
-    background-color: #999;
 }
 
 select{
