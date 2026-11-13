@@ -103,7 +103,7 @@
     height: 70vh;
     aspect-ratio: 1 / 1;
     gap: 1px;
-    background-color: white;
+    background-color: var(--gridBorder);
 }
 
 .setup_homeGridChild{
@@ -113,8 +113,8 @@
 }
 
 .setup_homeGridHeader{
-    background-color: #777777;
-    color: white;
-    font-weight: bold;
-    font-size: large;
+    background-color: var(--gridHeaderBackground);
+    color: var(--gridHeaderColour);
+    font-weight: var(--gridHeaderFont-Weight);
+    font-size: var(--gridHeaderFont-Size);
 }

@@ -1,22 +1,36 @@
 /* === VARIABLES.CSS === */
+/* ### ### */
 
 :root {
 
     /* ### INPUTS ### */
 
     
-    /* ### ERROR ### */
+    /* ERROR */
     --errorBackground: blueviolet;
 
 
-    /* ### MISS ### */
+    /* MISS */
     --missBackground: blue;
 
 
-    /* ### HIT ### */
+    /* HIT */
     --hitBackground: orange;
 
 
-    /* ### SUNK ### */
+    /* SUNK */
     --sunkBackground: red;
+
+
+    /* ### GRID ### */
+    
+        --gridHeaderBackground: #777777;
+        --gridHeaderColour: white;
+        --gridHeaderFont-Weight: bold;
+        --gridHeaderFont-Size: large;
+        
+        --gridBackground: lightblue;
+        
+        --gridBorder: black;
+
 }
