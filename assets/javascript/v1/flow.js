@@ -7,6 +7,7 @@
     import { initialiseFleet } from './state.js'; // function
     import { changeState } from './state.js'; // function
     import { shipPlacementData } from './ui.js'; // object
+    import { whatIsTheNextShip } from './logic.js'; // function
 
 // INITIALISATION
 
@@ -35,6 +36,7 @@
         console.log(`${ship} X coord: ${shipPlacementData.carrier.x.value}`);
         console.log(`${ship} Y coord: ${shipPlacementData.carrier.y.value}`);
         console.log(`${ship} Orientation: ${shipPlacementData.carrier.orientation.value}`);
+        console.log(`The next ship to be placed is the ${whatIsTheNextShip(ship)}`);
     }
 
     // actions when 'edit' placed ship is clicked
