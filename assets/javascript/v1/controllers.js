@@ -77,5 +77,6 @@
         shipPlacementData.carrier.x.removeEventListener("change", checkCarrierInputs);
         shipPlacementData.carrier.y.removeEventListener("change", checkCarrierInputs);
         shipPlacementData.carrier.orientation.removeEventListener("change", checkCarrierInputs);
+        shipPlacementData.carrier.placeButton.removeEventListener("click", placeCarrier);
     }
 
