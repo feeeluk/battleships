@@ -28,5 +28,67 @@
 
 // INITIALISATION
 
+// SETUP
 
+    // create variables for each input element
+    export const shipPlacementData = {
+        carrier:{
+            name: document.getElementById("setup_shipName_carrier_name"),
+            x: document.getElementById("setup_carrier_x"),
+            y: document.getElementById("setup_carrier_y"),
+            orientation: document.getElementById("setup_carrier_orientation"),
+            editButton: document.getElementById("setup_carrier_edit"),
+            placeButton: document.getElementById("setup_carrier_place"),
+        },
 
+        battleship:{
+            name: document.getElementById("setup_shipName_battleship_name"),
+            x: document.getElementById("setup_battleship_x"),
+            y: document.getElementById("setup_battleship_y"),
+            orientation: document.getElementById("setup_battleship_orientation"),
+            editButton: document.getElementById("setup_battleship_edit"),
+            placeButton: document.getElementById("setup_battleship_place"),
+        },
+
+        destroyer:{
+            name: document.getElementById("setup_shipName_destroyer_name"),
+            x: document.getElementById("setup_destroyer_x"),
+            y: document.getElementById("setup_destroyer_y"),
+            orientation: document.getElementById("setup_destroyer_orientation"),
+            editButton: document.getElementById("setup_destroyer_edit"),
+            placeButton: document.getElementById("setup_destroyer_place"),
+        },
+
+        cruiser:{
+            name: document.getElementById("setup_shipName_cruiser_name"),
+            x: document.getElementById("setup_cruiser_x"),
+            y: document.getElementById("setup_cruiser_y"),
+            orientation: document.getElementById("setup_cruiser_orientation"),
+            editButton: document.getElementById("setup_cruiser_edit"),
+            placeButton: document.getElementById("setup_cruiser_place"),
+        },
+
+        patrolBoat:{
+            name: document.getElementById("setup_shipName_patrolBoat_name"),
+            x: document.getElementById("setup_patrolBoat_x"),
+            y: document.getElementById("setup_patrolBoat_y"),
+            orientation: document.getElementById("setup_patrolBoat_orientation"),
+            editButton: document.getElementById("setup_patrolBoat_edit"),
+            placeButton: document.getElementById("setup_patrolBoat_place"),
+        },
+    }
+
+    // show 'place' ship button
+    export function showPlaceButtonForEachShip(ship) {
+
+        const controls = shipPlacementData[ship];
+
+        if (
+            controls.x.value !== "" &&
+            controls.y.value !== "" &&
+            controls.orientation.value !== ""
+        )
+        {
+            controls.placeButton.classList.remove("disabled");
+        }
+    }

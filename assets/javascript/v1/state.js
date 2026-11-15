@@ -3,10 +3,8 @@
 // IMPORT FUNCTIONS
     import { showLayer } from './ui.js';
 
-// VARIABLES
-    export let state;
-
-// FUNCTIONS
+// STATE OBJECT
+    export let state; // main state object
 
     export function resetState(){
         state = {
