@@ -4,32 +4,37 @@
 
     export function whatIsTheNextShip(currentShip){
 
-        let shipName;
+        let nextShipName;
 
         switch(currentShip){
 
             case "carrier":
-                shipName = "battleship";
+                nextShipName = "battleship";
                 break;
                 
             case "battleship":
-                shipName = "destroyer";
+                nextShipName = "destroyer";
                 break;
 
             case "destroyer":
-                shipName = "cruiser";
+                nextShipName = "cruiser";
                 break;
 
             case "cruiser":
-                shipName = "patrolBoat";
+                nextShipName = "patrolBoat";
                 break;
 
             case "patrolBoat":
-                shipName = "";
+                nextShipName = "";
                 break;
 
         }
 
-        return shipName;
+        return nextShipName;
 
+    }
+
+    export function calculateSegmentLocations(){
+
+        // get the ship
     }

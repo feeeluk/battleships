@@ -70,11 +70,11 @@
                             <!-- CARRIER -->
 
                             <div>
-                                <input type="text" id="setup_shipName_carrier" class="setup_input" value="Carrier" readonly>
+                                <input type="text" id="setup_shipName_carrier" class="setup_input carrier" value="Carrier" readonly>
                             </div>
 
                             <div>
-                                <select id="setup_carrier_x" class="setup_input">
+                                <select id="setup_carrier_x" class="setup_input carrier">
                                     <option value="" disabled selected>X Axis</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
@@ -90,7 +90,7 @@
                             </div>
 
                             <div>
-                                <select id="setup_carrier_y" class="setup_input">
+                                <select id="setup_carrier_y" class="setup_input carrier">
                                     <option value="" disabled selected>Y Axis</option>
                                     <option value="0">0</option>
                                     <option value="1">1</option>
@@ -106,8 +106,8 @@
                             </div>
 
                             <div>
-                                <select id="setup_carrier_orientation" class="setup_input">
-                                    <option value="" disabled selected>select</option>
+                                <select id="setup_carrier_orientation" class="setup_input carrier">
+                                    <option value="" disabled selected>Select</option>
                                     <option value="horizontal">Horizontal</option>
                                     <option value="vertical">Vertical</option>
                                 </select>
@@ -124,12 +124,12 @@
                             <!-- Battleship-->   
                             
                             <div>
-                                <input type="text" id="setup_shipName_battleship" class="setup_input disabled" value="Battleship" readonly>
+                                <input type="text" id="setup_shipName_battleship" class="setup_input disabled battleship" value="Battleship" readonly>
                             </div>
 
                             <div>
-                                <select id="setup_battleship_x" class="setup_input disabled">
-                                    <option value="" disabled selected>X</option>
+                                <select id="setup_battleship_x" class="setup_input disabled battleship">
+                                    <option value="" disabled selected>X Axis</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
                                     <option value="C">C</option>
@@ -144,8 +144,8 @@
                             </div>
 
                             <div>
-                                <select id="setup_battleship_y" class="setup_input disabled">
-                                    <option value="" disabled selected>Y</option>
+                                <select id="setup_battleship_y" class="setup_input disabled battleship">
+                                    <option value="" disabled selected>Y Axis</option>
                                     <option value="0">0</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -160,8 +160,8 @@
                             </div>
 
                             <div>
-                                <select id="setup_battleship_orientation" class="setup_input disabled">
-                                    <option value="" disabled selected>select</option>
+                                <select id="setup_battleship_orientation" class="setup_input disabled battleship">
+                                    <option value="" disabled selected>Select</option>
                                     <option value="horizontal">Horizontal</option>
                                     <option value="vertical">Vertical</option>
                                 </select>
@@ -175,15 +175,15 @@
                                 <button id="setup_battleship_place" class="setup_input disabled">Place</button>
                             </div>
                             
-                            <!-- Derstroyer -->
+                            <!-- Destroyer -->
 
                             <div>
-                                <input type="text" id="setup_shipName_destroyer" class="setup_input disabled" value="Destroyer" readonly>
+                                <input type="text" id="setup_shipName_destroyer" class="setup_input disabled destroyer" value="Destroyer" readonly>
                             </div>
 
                             <div>
-                                <select id="setup_destroyer_x" class="setup_input disabled">
-                                    <option value="" disabled selected>X</option>
+                                <select id="setup_destroyer_x" class="setup_input disabled destroyer">
+                                    <option value="" disabled selected>X Axis</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
                                     <option value="C">C</option>
@@ -198,8 +198,8 @@
                             </div>
 
                             <div>
-                                <select id="setup_destroyer_y" class="setup_input disabled">
-                                    <option value="" disabled selected>Y</option>
+                                <select id="setup_destroyer_y" class="setup_input disabled destroyer">
+                                    <option value="" disabled selected>Y Axis</option>
                                     <option value="0">0</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -214,8 +214,8 @@
                             </div>
 
                             <div>
-                                <select id="setup_destroyer_orientation" class="setup_input disabled">
-                                    <option value="" disabled selected>select</option>
+                                <select id="setup_destroyer_orientation" class="setup_input disabled destroyer">
+                                    <option value="" disabled selected>Select</option>
                                     <option value="horizontal">Horizontal</option>
                                     <option value="vertical">Vertical</option>
                                 </select>
@@ -232,12 +232,12 @@
                             <!-- Cruiser -->
 
                             <div>
-                                <input type="text" id="setup_shipName_cruiser" class="setup_input disabled" value="Cruiser" readonly>
+                                <input type="text" id="setup_shipName_cruiser" class="setup_input disabled cruiser" value="Cruiser" readonly>
                             </div>
 
                             <div>
-                                <select id="setup_cruiser_x" class="setup_input disabled">
-                                    <option value="" disabled selected>X</option>
+                                <select id="setup_cruiser_x" class="setup_input disabled cruiser">
+                                    <option value="" disabled selected>X Axis</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
                                     <option value="C">C</option>
@@ -252,8 +252,8 @@
                             </div>
 
                             <div>
-                                <select id="setup_cruiser_y" class="setup_input disabled">
-                                    <option value="" disabled selected>Y</option>
+                                <select id="setup_cruiser_y" class="setup_input disabled cruiser">
+                                    <option value="" disabled selected>Y Axis</option>
                                     <option value="0">0</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -268,8 +268,8 @@
                             </div>
 
                             <div>
-                                <select id="setup_cruiser_orientation" class="setup_input disabled">
-                                    <option value="" disabled selected>select</option>
+                                <select id="setup_cruiser_orientation" class="setup_input disabled cruiser">
+                                    <option value="" disabled selected>Select</option>
                                     <option value="horizontal">Horizontal</option>
                                     <option value="vertical">Vertical</option>
                                 </select>
@@ -286,12 +286,12 @@
                             <!-- PATROL BOAT -->
                             
                             <div>
-                                <input type="text" id="setup_shipName_patrolBoat" class="setup_input disabled" value="Patrol Boat" readonly>
+                                <input type="text" id="setup_shipName_patrolBoat" class="setup_input disabled patrolBoat" value="Patrol Boat" readonly>
                             </div>
 
                             <div>
-                                <select id="setup_patrolBoat_x" class="setup_input disabled">
-                                    <option value="" disabled selected>X</option>
+                                <select id="setup_patrolBoat_x" class="setup_input disabled patrolBoat">
+                                    <option value="" disabled selected>X Axis</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
                                     <option value="C">C</option>
@@ -306,8 +306,8 @@
                             </div>
 
                             <div>
-                                <select id="setup_patrolBoat_y" class="setup_input disabled">
-                                    <option value="" disabled selected>Y</option>
+                                <select id="setup_patrolBoat_y" class="setup_input disabled patrolBoat">
+                                    <option value="" disabled selected>Y Axis</option>
                                     <option value="0">0</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -322,8 +322,8 @@
                             </div>
 
                             <div>
-                                <select id="setup_patrolBoat_orientation" class="setup_input disabled">
-                                    <option value="" disabled selected>select</option>
+                                <select id="setup_patrolBoat_orientation" class="setup_input disabled patrolBoat">
+                                    <option value="" disabled selected>Select</option>
                                     <option value="horizontal">Horizontal</option>
                                     <option value="vertical">Vertical</option>
                                 </select>

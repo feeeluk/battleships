@@ -8,6 +8,7 @@
     import { changeState } from './state.js'; // function
     import { shipPlacementData } from './ui.js'; // object
     import { whatIsTheNextShip } from './logic.js'; // function
+    import { calculateSegmentLocations } from './logic.js';
 
 // INITIALISATION
 
@@ -28,16 +29,36 @@
 
 // SETUP
 
-    // show 'edit' placement button
-
-    // actions when 'place' ship is clicked
     export function placeEachShip(ship){
 
-        console.log(`${ship} X coord: ${shipPlacementData.carrier.x.value}`);
-        console.log(`${ship} Y coord: ${shipPlacementData.carrier.y.value}`);
-        console.log(`${ship} Orientation: ${shipPlacementData.carrier.orientation.value}`);
-        console.log(`The next ship to be placed is the ${whatIsTheNextShip(ship)}`);
+        showShipInputsInTheConsole(ship);
+        // calculateSegmentLocations(ship)
+        enableNextShipInputs(ship);    
     }
 
-    // actions when 'edit' placed ship is clicked
-    export function editPlacedShip(ship){}
+    function showShipInputsInTheConsole(shipName){
+        console.log((shipName + " X coord: " + shipPlacementData[shipName].x.value));
+        console.log((shipName + " Y coord: " + shipPlacementData[shipName].y.value));
+        console.log((shipName + " Orientation: " + shipPlacementData[shipName].orientation.value));
+        if(shipName == "patrolBoat"){}
+        else{
+            console.log(`The next ship to be placed is the ${whatIsTheNextShip(shipName)}`);
+        }
+    }
+
+    
+
+    function enableNextShipInputs(shipName)
+    {
+        let nextShip = whatIsTheNextShip(shipName);
+
+        if(nextShip == ""){}
+        else{
+
+            let inputs = document.querySelectorAll(`.${nextShip}`);
+
+            inputs.forEach(input => {
+                input.classList.remove("disabled");
+            });
+        }
+    }
