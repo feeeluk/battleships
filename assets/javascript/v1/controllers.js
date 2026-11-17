@@ -54,9 +54,6 @@
     };
 
 
-// FUNCTIONS
-
-
 // EVENT LISTENERS
 
     // ADD

@@ -36,9 +36,16 @@ import { shipPlacementData } from "./ui.js";
 
     }
 
+    export function displayTheNextShip(shipName){
+        if(shipName == "patrolBoat"){}
+        else{
+            console.log(`The next ship to be placed is the ${whatIsTheNextShip(shipName)}`);
+        }
+    }
+
     export function calculateSegmentLocations(shipName){
 
-        console.log(`${shipName} X:${shipPlacementData[shipName].x.value}, Y:${shipPlacementData[shipName].y.value}`);
+        console.log(`${shipName} segment #1 (X:${shipPlacementData[shipName].x.value}, Y:${shipPlacementData[shipName].y.value})`);
         
         shipPlacementData[shipName].segments.push({
             x : Number(shipPlacementData[shipName].x.value),
@@ -50,7 +57,7 @@ import { shipPlacementData } from "./ui.js";
         for(let i = 1; i < shipPlacementData[shipName].length; i++){
             
             if(shipPlacementData[shipName].orientation.value === "horizontal"){
-                console.log(`${shipName} X:${Number(shipPlacementData[shipName].x.value) + i}, Y:${Number(shipPlacementData[shipName].y.value)}`);
+                console.log(`${shipName} segment #${i+1} (X:${Number(shipPlacementData[shipName].x.value) + i}, Y:${Number(shipPlacementData[shipName].y.value)})`);
                 shipPlacementData[shipName].segments.push({
                     x : Number(shipPlacementData[shipName].x.value + i),
                     y : Number(shipPlacementData[shipName].y.value),
@@ -58,7 +65,7 @@ import { shipPlacementData } from "./ui.js";
             }
 
             else if(shipPlacementData[shipName].orientation.value === "vertical"){
-                console.log(`${shipName} X:${Number(shipPlacementData[shipName].x.value)}, Y:${Number(shipPlacementData[shipName].y.value) + i}`);
+                console.log(`${shipName} segment #${i+1} (X:${Number(shipPlacementData[shipName].x.value)}, Y:${Number(shipPlacementData[shipName].y.value) + i})`);
                 shipPlacementData[shipName].segments.push({
                     x : Number(shipPlacementData[shipName].x.value),
                     y : Number(shipPlacementData[shipName].y.value + i),

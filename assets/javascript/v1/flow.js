@@ -11,6 +11,7 @@
     import { calculateSegmentLocations } from './logic.js'; // function
     import { disableInputsForEachShip } from './ui.js'; // function
     import { enableEditButtonForEachShip } from './ui.js'; // function
+    import { displayTheNextShip } from './logic.js'; // function
 
 // INITIALISATION
 
@@ -35,20 +36,15 @@
 
         showShipInputsInTheConsole(ship);
         calculateSegmentLocations(ship);
+        displayTheNextShip(ship);
         disableInputsForEachShip(ship);
         enableEditButtonForEachShip(ship);
         enableNextShipInputs(ship);    
     }
 
     function showShipInputsInTheConsole(shipName){
-        console.log(`${shipName}: place ship at X:${shipPlacementData[shipName].x.value}, Y:${shipPlacementData[shipName].y.value}`);
-        console.log(`${shipName}: orientation: "${shipPlacementData[shipName].orientation.value}"`);
-
-
-        if(shipName == "patrolBoat"){}
-        else{
-            console.log(`The next ship to be placed is the ${whatIsTheNextShip(shipName)}`);
-        }
+        console.log(`${shipName} - Place ship at: (X:${shipPlacementData[shipName].x.value}, Y:${shipPlacementData[shipName].y.value})`);
+        console.log(`${shipName} - Orientation: "${shipPlacementData[shipName].orientation.value}"`);
     }    
 
     function enableNextShipInputs(shipName)
