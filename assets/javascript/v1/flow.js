@@ -8,7 +8,8 @@
     import { changeState } from './state.js'; // function
     import { shipPlacementData } from './ui.js'; // object
     import { whatIsTheNextShip } from './logic.js'; // function
-    import { calculateSegmentLocations } from './logic.js';
+    import { calculateSegmentLocations } from './logic.js'; // function
+    import { disablePlaceButtonForEachShip } from './ui.js'; // function
 
 // INITIALISATION
 
@@ -32,8 +33,8 @@
     export function placeEachShip(ship){
 
         showShipInputsInTheConsole(ship);
-        // disable place button
-        calculateSegmentLocations(ship)
+        calculateSegmentLocations(ship);
+        disablePlaceButtonForEachShip(ship);
         enableNextShipInputs(ship);    
     }
 

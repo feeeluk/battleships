@@ -88,8 +88,7 @@
         },
     }
 
-    // show 'place' ship button
-    export function showPlaceButtonForEachShip(ship) {
+    export function enablePlaceButtonForEachShip(ship) {
 
         const controls = shipPlacementData[ship];
 
@@ -101,4 +100,12 @@
         {
             controls.placeButton.classList.remove("disabled");
         }
+    }
+
+    export function disablePlaceButtonForEachShip(ship) {
+        shipPlacementData[ship].placeButton.classList.add("disabled");
+    }
+
+    export function enableEditButtonForEachShip(ship) {
+        shipPlacementData[ship].editButton.classList.remove("disabled");
     }
