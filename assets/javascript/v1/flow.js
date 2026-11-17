@@ -10,6 +10,7 @@
     import { whatIsTheNextShip } from './logic.js'; // function
     import { calculateSegmentLocations } from './logic.js'; // function
     import { disablePlaceButtonForEachShip } from './ui.js'; // function
+    import { enableEditButtonForEachShip } from './ui.js'; // function
 
 // INITIALISATION
 
@@ -35,6 +36,7 @@
         showShipInputsInTheConsole(ship);
         calculateSegmentLocations(ship);
         disablePlaceButtonForEachShip(ship);
+        enableEditButtonForEachShip(ship);
         enableNextShipInputs(ship);    
     }
 
