@@ -32,21 +32,21 @@
     export function placeEachShip(ship){
 
         showShipInputsInTheConsole(ship);
-        // calculateSegmentLocations(ship)
+        // disable place button
+        calculateSegmentLocations(ship)
         enableNextShipInputs(ship);    
     }
 
     function showShipInputsInTheConsole(shipName){
-        console.log((shipName + " X coord: " + shipPlacementData[shipName].x.value));
-        console.log((shipName + " Y coord: " + shipPlacementData[shipName].y.value));
-        console.log((shipName + " Orientation: " + shipPlacementData[shipName].orientation.value));
+        console.log(`${shipName}: place ship at X:${shipPlacementData[shipName].x.value}, Y:${shipPlacementData[shipName].y.value}`);
+        console.log(`${shipName}: orientation: "${shipPlacementData[shipName].orientation.value}"`);
+
+
         if(shipName == "patrolBoat"){}
         else{
             console.log(`The next ship to be placed is the ${whatIsTheNextShip(shipName)}`);
         }
-    }
-
-    
+    }    
 
     function enableNextShipInputs(shipName)
     {

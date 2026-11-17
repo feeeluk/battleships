@@ -39,6 +39,8 @@
             orientation: document.getElementById("setup_carrier_orientation"),
             editButton: document.getElementById("setup_carrier_edit"),
             placeButton: document.getElementById("setup_carrier_place"),
+            length: 5,
+            segments: [],
         },
 
         battleship:{
@@ -48,6 +50,8 @@
             orientation: document.getElementById("setup_battleship_orientation"),
             editButton: document.getElementById("setup_battleship_edit"),
             placeButton: document.getElementById("setup_battleship_place"),
+            length: 4,
+            segments: [],
         },
 
         destroyer:{
@@ -57,6 +61,8 @@
             orientation: document.getElementById("setup_destroyer_orientation"),
             editButton: document.getElementById("setup_destroyer_edit"),
             placeButton: document.getElementById("setup_destroyer_place"),
+            length: 3,
+            segments: [],
         },
 
         cruiser:{
@@ -66,6 +72,8 @@
             orientation: document.getElementById("setup_cruiser_orientation"),
             editButton: document.getElementById("setup_cruiser_edit"),
             placeButton: document.getElementById("setup_cruiser_place"),
+            length: 3,
+            segments: [],
         },
 
         patrolBoat:{
@@ -75,6 +83,8 @@
             orientation: document.getElementById("setup_patrolBoat_orientation"),
             editButton: document.getElementById("setup_patrolBoat_edit"),
             placeButton: document.getElementById("setup_patrolBoat_place"),
+            length: 2,
+            segments: [],
         },
     }
 
