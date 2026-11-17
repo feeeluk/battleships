@@ -90,6 +90,7 @@
 
     export function enablePlaceButtonForEachShip(ship) {
 
+        disableEditButtonForEachShip(ship);
         const controls = shipPlacementData[ship];
 
         if (
@@ -102,10 +103,19 @@
         }
     }
 
-    export function disablePlaceButtonForEachShip(ship) {
+    export function disableInputsForEachShip(ship) {
+        let inputs =document.querySelectorAll(`.${ship}`);
+        inputs.forEach(input => {
+            input.classList.add("disabled");
+        });
         shipPlacementData[ship].placeButton.classList.add("disabled");
+
     }
 
     export function enableEditButtonForEachShip(ship) {
         shipPlacementData[ship].editButton.classList.remove("disabled");
+    }
+
+    export function disableEditButtonForEachShip(ship) {
+        shipPlacementData[ship].editButton.classList.add("disabled");
     }
