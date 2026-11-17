@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/styles/v1/variables.css?v001">
     <link rel="stylesheet" href="/assets/styles/v1/reset.css">
     <link rel="stylesheet" href="/assets/styles/v1/initialisation.css?v002">
+    <link rel="stylesheet" href="/assets/styles/v1/grid.css?v001">
     <link rel="stylesheet" href="/assets/styles/v1/setup.css?v010">
     <link rel="stylesheet" href="/assets/styles/v1/activePlay.css?v003">
     <link rel="stylesheet" href="/assets/styles/v1/gameOver.css?v001">
@@ -354,143 +355,145 @@
 
                 <div id="setup_grid" class="setup_containerChild setup_containerRightSide">
                     
-                     <div id="setup_homeGridWrapper">
+                     <div id="setup_homeGridWrapper" class="gridWrapper">
                             
                         <h1 class="marginBottom">Home Grid</h1>
 
-                        <div id="setup_homeGrid">
+                        <div id="setup_homeGrid" class="grid">
+                            <div class="empty"></div>
+                            <div class="xLabel">X axis</div>
+                            <div class="yLabel"><span>Y axis</span></div>
+                            <div id="setup_homeGrid_header" class="gridChild gridHeader"></div>
+                            <div id="setup_homeGrid_headerA" class="gridChild gridHeader">A</div>
+                            <div id="setup_homeGrid_headerB" class="gridChild gridHeader">B</div>
+                            <div id="setup_homeGrid_headerC" class="gridChild gridHeader">C</div>
+                            <div id="setup_homeGrid_headerD" class="gridChild gridHeader">D</div>
+                            <div id="setup_homeGrid_headerE" class="gridChild gridHeader">E</div>
+                            <div id="setup_homeGrid_headerF" class="gridChild gridHeader">F</div>
+                            <div id="setup_homeGrid_headerG" class="gridChild gridHeader">G</div>
+                            <div id="setup_homeGrid_headerH" class="gridChild gridHeader">H</div>
+                            <div id="setup_homeGrid_headerI" class="gridChild gridHeader">I</div>
+                            <div id="setup_homeGrid_headerJ" class="gridChild gridHeader">J</div>
 
-                            <div id="setup_homeGrid_header" class="setup_homeGridChild setup_homeGridHeader"></div>
-                            <div id="setup_homeGrid_headerA" class="setup_homeGridChild setup_homeGridHeader">A</div>
-                            <div id="setup_homeGrid_headerB" class="setup_homeGridChild setup_homeGridHeader">B</div>
-                            <div id="setup_homeGrid_headerC" class="setup_homeGridChild setup_homeGridHeader">C</div>
-                            <div id="setup_homeGrid_headerD" class="setup_homeGridChild setup_homeGridHeader">D</div>
-                            <div id="setup_homeGrid_headerE" class="setup_homeGridChild setup_homeGridHeader">E</div>
-                            <div id="setup_homeGrid_headerF" class="setup_homeGridChild setup_homeGridHeader">F</div>
-                            <div id="setup_homeGrid_headerG" class="setup_homeGridChild setup_homeGridHeader">G</div>
-                            <div id="setup_homeGrid_headerH" class="setup_homeGridChild setup_homeGridHeader">H</div>
-                            <div id="setup_homeGrid_headerI" class="setup_homeGridChild setup_homeGridHeader">I</div>
-                            <div id="setup_homeGrid_headerJ" class="setup_homeGridChild setup_homeGridHeader">J</div>
+                            <div id="setup_homeGrid_header0" class="gridChild gridHeader">0</div>
+                            <div id="setup_homeGrid_A0" class="gridChild water"></div>
+                            <div id="setup_homeGrid_B0" class="gridChild water"></div>
+                            <div id="setup_homeGrid_C0" class="gridChild water"></div>
+                            <div id="setup_homeGrid_D0" class="gridChild water"></div>
+                            <div id="setup_homeGrid_E0" class="gridChild water"></div>
+                            <div id="setup_homeGrid_F0" class="gridChild water"></div>
+                            <div id="setup_homeGrid_G0" class="gridChild water"></div>
+                            <div id="setup_homeGrid_H0" class="gridChild water"></div>
+                            <div id="setup_homeGrid_I0" class="gridChild water"></div>
+                            <div id="setup_homeGrid_J0" class="gridChild water"></div>
 
-                            <div id="setup_homeGrid_header0" class="setup_homeGridChild setup_homeGridHeader">0</div>
-                            <div id="setup_homeGrid_A0" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_B0" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_C0" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_D0" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_E0" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_F0" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_G0" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_H0" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_I0" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_J0" class="setup_homeGridChild water"></div>
+                            <div id="setup_homeGrid_header1" class="gridChild gridHeader">1</div>
+                            <div id="setup_homeGrid_A1" class="gridChild water"></div>
+                            <div id="setup_homeGrid_B1" class="gridChild water"></div>
+                            <div id="setup_homeGrid_C1" class="gridChild water"></div>
+                            <div id="setup_homeGrid_D1" class="gridChild water"></div>
+                            <div id="setup_homeGrid_E1" class="gridChild water"></div>
+                            <div id="setup_homeGrid_F1" class="gridChild water"></div>
+                            <div id="setup_homeGrid_G1" class="gridChild water"></div>
+                            <div id="setup_homeGrid_H1" class="gridChild water"></div>
+                            <div id="setup_homeGrid_I1" class="gridChild water"></div>
+                            <div id="setup_homeGrid_J1" class="gridChild water"></div>
 
-                            <div id="setup_homeGrid_header1" class="setup_homeGridChild setup_homeGridHeader">1</div>
-                            <div id="setup_homeGrid_A1" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_B1" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_C1" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_D1" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_E1" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_F1" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_G1" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_H1" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_I1" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_J1" class="setup_homeGridChild water"></div>
-
-                            <div id="setup_homeGrid_header2" class="setup_homeGridChild setup_homeGridHeader">2</div>
-                            <div id="setup_homeGrid_A2" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_B2" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_C2" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_D2" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_E2" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_F2" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_G2" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_H2" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_I2" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_J2" class="setup_homeGridChild water"></div>
+                            <div id="setup_homeGrid_header2" class="gridChild gridHeader">2</div>
+                            <div id="setup_homeGrid_A2" class="gridChild water"></div>
+                            <div id="setup_homeGrid_B2" class="gridChild water"></div>
+                            <div id="setup_homeGrid_C2" class="gridChild water"></div>
+                            <div id="setup_homeGrid_D2" class="gridChild water"></div>
+                            <div id="setup_homeGrid_E2" class="gridChild water"></div>
+                            <div id="setup_homeGrid_F2" class="gridChild water"></div>
+                            <div id="setup_homeGrid_G2" class="gridChild water"></div>
+                            <div id="setup_homeGrid_H2" class="gridChild water"></div>
+                            <div id="setup_homeGrid_I2" class="gridChild water"></div>
+                            <div id="setup_homeGrid_J2" class="gridChild water"></div>
                             
-                            <div id="setup_homeGrid_header3" class="setup_homeGridChild setup_homeGridHeader">3</div>
-                            <div id="setup_homeGrid_A3" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_B3" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_C3" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_D3" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_E3" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_F3" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_G3" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_H3" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_I3" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_J3" class="setup_homeGridChild water"></div>
+                            <div id="setup_homeGrid_header3" class="gridChild gridHeader">3</div>
+                            <div id="setup_homeGrid_A3" class="gridChild water"></div>
+                            <div id="setup_homeGrid_B3" class="gridChild water"></div>
+                            <div id="setup_homeGrid_C3" class="gridChild water"></div>
+                            <div id="setup_homeGrid_D3" class="gridChild water"></div>
+                            <div id="setup_homeGrid_E3" class="gridChild water"></div>
+                            <div id="setup_homeGrid_F3" class="gridChild water"></div>
+                            <div id="setup_homeGrid_G3" class="gridChild water"></div>
+                            <div id="setup_homeGrid_H3" class="gridChild water"></div>
+                            <div id="setup_homeGrid_I3" class="gridChild water"></div>
+                            <div id="setup_homeGrid_J3" class="gridChild water"></div>
 
-                            <div id="setup_homeGrid_header4" class="setup_homeGridChild setup_homeGridHeader">4</div>
-                            <div id="setup_homeGrid_A4" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_B4" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_C4" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_D4" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_E4" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_F4" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_G4" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_H4" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_I4" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_J4" class="setup_homeGridChild water"></div>
+                            <div id="setup_homeGrid_header4" class="gridChild gridHeader">4</div>
+                            <div id="setup_homeGrid_A4" class="gridChild water"></div>
+                            <div id="setup_homeGrid_B4" class="gridChild water"></div>
+                            <div id="setup_homeGrid_C4" class="gridChild water"></div>
+                            <div id="setup_homeGrid_D4" class="gridChild water"></div>
+                            <div id="setup_homeGrid_E4" class="gridChild water"></div>
+                            <div id="setup_homeGrid_F4" class="gridChild water"></div>
+                            <div id="setup_homeGrid_G4" class="gridChild water"></div>
+                            <div id="setup_homeGrid_H4" class="gridChild water"></div>
+                            <div id="setup_homeGrid_I4" class="gridChild water"></div>
+                            <div id="setup_homeGrid_J4" class="gridChild water"></div>
 
-                            <div id="setup_homeGrid_header5" class="setup_homeGridChild setup_homeGridHeader">5</div>
-                            <div id="setup_homeGrid_A5" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_B5" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_C5" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_D5" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_E5" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_F5" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_G5" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_H5" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_I5" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_J5" class="setup_homeGridChild water"></div>
+                            <div id="setup_homeGrid_header5" class="gridChild gridHeader">5</div>
+                            <div id="setup_homeGrid_A5" class="gridChild water"></div>
+                            <div id="setup_homeGrid_B5" class="gridChild water"></div>
+                            <div id="setup_homeGrid_C5" class="gridChild water"></div>
+                            <div id="setup_homeGrid_D5" class="gridChild water"></div>
+                            <div id="setup_homeGrid_E5" class="gridChild water"></div>
+                            <div id="setup_homeGrid_F5" class="gridChild water"></div>
+                            <div id="setup_homeGrid_G5" class="gridChild water"></div>
+                            <div id="setup_homeGrid_H5" class="gridChild water"></div>
+                            <div id="setup_homeGrid_I5" class="gridChild water"></div>
+                            <div id="setup_homeGrid_J5" class="gridChild water"></div>
 
-                            <div id="setup_homeGrid_header6" class="setup_homeGridChild setup_homeGridHeader">6</div>
-                            <div id="setup_homeGrid_A6" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_B6" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_C6" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_D6" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_E6" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_F6" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_G6" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_H6" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_I6" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_J6" class="setup_homeGridChild water"></div>
+                            <div id="setup_homeGrid_header6" class="gridChild gridHeader">6</div>
+                            <div id="setup_homeGrid_A6" class="gridChild water"></div>
+                            <div id="setup_homeGrid_B6" class="gridChild water"></div>
+                            <div id="setup_homeGrid_C6" class="gridChild water"></div>
+                            <div id="setup_homeGrid_D6" class="gridChild water"></div>
+                            <div id="setup_homeGrid_E6" class="gridChild water"></div>
+                            <div id="setup_homeGrid_F6" class="gridChild water"></div>
+                            <div id="setup_homeGrid_G6" class="gridChild water"></div>
+                            <div id="setup_homeGrid_H6" class="gridChild water"></div>
+                            <div id="setup_homeGrid_I6" class="gridChild water"></div>
+                            <div id="setup_homeGrid_J6" class="gridChild water"></div>
 
-                            <div id="setup_homeGrid_header7" class="setup_homeGridChild setup_homeGridHeader">7</div>
-                            <div id="setup_homeGrid_A7" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_B7" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_C7" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_D7" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_E7" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_F7" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_G7" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_H7" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_I7" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_J7" class="setup_homeGridChild water"></div>
+                            <div id="setup_homeGrid_header7" class="gridChild gridHeader">7</div>
+                            <div id="setup_homeGrid_A7" class="gridChild water"></div>
+                            <div id="setup_homeGrid_B7" class="gridChild water"></div>
+                            <div id="setup_homeGrid_C7" class="gridChild water"></div>
+                            <div id="setup_homeGrid_D7" class="gridChild water"></div>
+                            <div id="setup_homeGrid_E7" class="gridChild water"></div>
+                            <div id="setup_homeGrid_F7" class="gridChild water"></div>
+                            <div id="setup_homeGrid_G7" class="gridChild water"></div>
+                            <div id="setup_homeGrid_H7" class="gridChild water"></div>
+                            <div id="setup_homeGrid_I7" class="gridChild water"></div>
+                            <div id="setup_homeGrid_J7" class="gridChild water"></div>
 
-                            <div id="setup_homeGrid_header8" class="setup_homeGridChild setup_homeGridHeader">8</div>
-                            <div id="setup_homeGrid_A8" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_B8" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_C8" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_D8" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_E8" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_F8" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_G8" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_H8" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_I8" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_J8" class="setup_homeGridChild water"></div>
+                            <div id="setup_homeGrid_header8" class="gridChild gridHeader">8</div>
+                            <div id="setup_homeGrid_A8" class="gridChild water"></div>
+                            <div id="setup_homeGrid_B8" class="gridChild water"></div>
+                            <div id="setup_homeGrid_C8" class="gridChild water"></div>
+                            <div id="setup_homeGrid_D8" class="gridChild water"></div>
+                            <div id="setup_homeGrid_E8" class="gridChild water"></div>
+                            <div id="setup_homeGrid_F8" class="gridChild water"></div>
+                            <div id="setup_homeGrid_G8" class="gridChild water"></div>
+                            <div id="setup_homeGrid_H8" class="gridChild water"></div>
+                            <div id="setup_homeGrid_I8" class="gridChild water"></div>
+                            <div id="setup_homeGrid_J8" class="gridChild water"></div>
 
-                            <div id="setup_homeGrid_header9" class="setup_homeGridChild setup_homeGridHeader">9</div>
-                            <div id="setup_homeGrid_A9" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_B9" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_C9" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_D9" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_E9" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_G9" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_F9" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_H9" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_I9" class="setup_homeGridChild water"></div>
-                            <div id="setup_homeGrid_J9" class="setup_homeGridChild water"></div>
+                            <div id="setup_homeGrid_header9" class="gridChild gridHeader">9</div>
+                            <div id="setup_homeGrid_A9" class="gridChild water"></div>
+                            <div id="setup_homeGrid_B9" class="gridChild water"></div>
+                            <div id="setup_homeGrid_C9" class="gridChild water"></div>
+                            <div id="setup_homeGrid_D9" class="gridChild water"></div>
+                            <div id="setup_homeGrid_E9" class="gridChild water"></div>
+                            <div id="setup_homeGrid_G9" class="gridChild water"></div>
+                            <div id="setup_homeGrid_F9" class="gridChild water"></div>
+                            <div id="setup_homeGrid_H9" class="gridChild water"></div>
+                            <div id="setup_homeGrid_I9" class="gridChild water"></div>
+                            <div id="setup_homeGrid_J9" class="gridChild water"></div>
                         </div>
                     </div>
                 </div>
@@ -509,143 +512,146 @@
 
                 <div id="activePlay_containerLeftSide" class="alignHorizontalCentre">
 
-                    <div id="activePlay_homeGridWrapper">
+                    <div id="activePlay_homeGridWrapper" class="gridWrapper">
 
                         <h1 class="marginBottom">Home Grid</h1>
 
-                        <div id="activePlay_homeGrid">
+                        <div id="activePlay_homeGrid" class="grid">
 
-                            <div id="activePlay_homeGrid_header" class="activePlay_homeGridChild activePlay_homeGridHeader"></div>
-                            <div id="activePlay_homeGrid_headerA" class="activePlay_homeGridChild activePlay_homeGridHeader">A</div>
-                            <div id="activePlay_homeGrid_headerB" class="activePlay_homeGridChild activePlay_homeGridHeader">B</div>
-                            <div id="activePlay_homeGrid_headerC" class="activePlay_homeGridChild activePlay_homeGridHeader">C</div>
-                            <div id="activePlay_homeGrid_headerD" class="activePlay_homeGridChild activePlay_homeGridHeader">D</div>
-                            <div id="activePlay_homeGrid_headerE" class="activePlay_homeGridChild activePlay_homeGridHeader">E</div>
-                            <div id="activePlay_homeGrid_headerF" class="activePlay_homeGridChild activePlay_homeGridHeader">F</div>
-                            <div id="activePlay_homeGrid_headerG" class="activePlay_homeGridChild activePlay_homeGridHeader">G</div>
-                            <div id="activePlay_homeGrid_headerH" class="activePlay_homeGridChild activePlay_homeGridHeader">H</div>
-                            <div id="activePlay_homeGrid_headerI" class="activePlay_homeGridChild activePlay_homeGridHeader">I</div>
-                            <div id="activePlay_homeGrid_headerJ" class="activePlay_homeGridChild activePlay_homeGridHeader">J</div>
+                            <div class="empty"></div>
+                            <div class="xLabel">X axis</div>
+                            <div class="yLabel"><span>Y axis</span></div>
+                            <div id="activePlay_homeGrid_header" class="gridChild gridHeader"></div>
+                            <div id="activePlay_homeGrid_headerA" class="gridChild gridHeader">A</div>
+                            <div id="activePlay_homeGrid_headerB" class="gridChild gridHeader">B</div>
+                            <div id="activePlay_homeGrid_headerC" class="gridChild gridHeader">C</div>
+                            <div id="activePlay_homeGrid_headerD" class="gridChild gridHeader">D</div>
+                            <div id="activePlay_homeGrid_headerE" class="gridChild gridHeader">E</div>
+                            <div id="activePlay_homeGrid_headerF" class="gridChild gridHeader">F</div>
+                            <div id="activePlay_homeGrid_headerG" class="gridChild gridHeader">G</div>
+                            <div id="activePlay_homeGrid_headerH" class="gridChild gridHeader">H</div>
+                            <div id="activePlay_homeGrid_headerI" class="gridChild gridHeader">I</div>
+                            <div id="activePlay_homeGrid_headerJ" class="gridChild gridHeader">J</div>
 
-                            <div id="activePlay_homeGrid_header0" class="activePlay_homeGridChild activePlay_homeGridHeader">0</div>
-                            <div id="activePlay_homeGrid_A0" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_B0" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_C0" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_D0" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_E0" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_F0" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_G0" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_H0" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_I0" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_J0" class="activePlay_homeGridChild water"></div>
+                            <div id="activePlay_homeGrid_header0" class="gridChild gridHeader">0</div>
+                            <div id="activePlay_homeGrid_A0" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_B0" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_C0" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_D0" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_E0" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_F0" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_G0" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_H0" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_I0" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_J0" class="gridChild water"></div>
 
-                            <div id="activePlay_homeGrid_header1" class="activePlay_homeGridChild activePlay_homeGridHeader">1</div>
-                            <div id="activePlay_homeGrid_A1" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_B1" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_C1" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_D1" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_E1" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_F1" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_G1" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_H1" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_I1" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_J1" class="activePlay_homeGridChild water"></div>
+                            <div id="activePlay_homeGrid_header1" class="gridChild gridHeader">1</div>
+                            <div id="activePlay_homeGrid_A1" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_B1" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_C1" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_D1" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_E1" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_F1" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_G1" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_H1" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_I1" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_J1" class="gridChild water"></div>
 
-                            <div id="activePlay_homeGrid_header2" class="activePlay_homeGridChild activePlay_homeGridHeader">2</div>
-                            <div id="activePlay_homeGrid_A2" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_B2" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_C2" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_D2" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_E2" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_F2" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_G2" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_H2" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_I2" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_J2" class="activePlay_homeGridChild water"></div>
+                            <div id="activePlay_homeGrid_header2" class="gridChild gridHeader">2</div>
+                            <div id="activePlay_homeGrid_A2" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_B2" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_C2" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_D2" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_E2" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_F2" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_G2" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_H2" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_I2" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_J2" class="gridChild water"></div>
                             
-                            <div id="activePlay_homeGrid_header3" class="activePlay_homeGridChild activePlay_homeGridHeader">3</div>
-                            <div id="activePlay_homeGrid_A3" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_B3" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_C3" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_D3" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_E3" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_F3" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_G3" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_H3" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_I3" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_J3" class="activePlay_homeGridChild water"></div>
+                            <div id="activePlay_homeGrid_header3" class="gridChild gridHeader">3</div>
+                            <div id="activePlay_homeGrid_A3" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_B3" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_C3" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_D3" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_E3" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_F3" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_G3" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_H3" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_I3" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_J3" class="gridChild water"></div>
 
-                            <div id="activePlay_homeGrid_header4" class="activePlay_homeGridChild activePlay_homeGridHeader">4</div>
-                            <div id="activePlay_homeGrid_A4" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_B4" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_C4" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_D4" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_E4" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_F4" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_G4" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_H4" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_I4" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_J4" class="activePlay_homeGridChild water"></div>
+                            <div id="activePlay_homeGrid_header4" class="gridChild gridHeader">4</div>
+                            <div id="activePlay_homeGrid_A4" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_B4" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_C4" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_D4" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_E4" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_F4" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_G4" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_H4" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_I4" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_J4" class="gridChild water"></div>
 
-                            <div id="activePlay_homeGrid_header5" class="activePlay_homeGridChild activePlay_homeGridHeader">5</div>
-                            <div id="activePlay_homeGrid_A5" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_B5" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_C5" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_D5" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_E5" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_F5" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_G5" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_H5" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_I5" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_J5" class="activePlay_homeGridChild water"></div>
+                            <div id="activePlay_homeGrid_header5" class="gridChild gridHeader">5</div>
+                            <div id="activePlay_homeGrid_A5" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_B5" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_C5" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_D5" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_E5" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_F5" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_G5" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_H5" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_I5" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_J5" class="gridChild water"></div>
 
-                            <div id="activePlay_homeGrid_header6" class="activePlay_homeGridChild activePlay_homeGridHeader">6</div>
-                            <div id="activePlay_homeGrid_A6" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_B6" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_C6" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_D6" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_E6" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_F6" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_G6" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_H6" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_I6" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_J6" class="activePlay_homeGridChild water"></div>
+                            <div id="activePlay_homeGrid_header6" class="gridChild gridHeader">6</div>
+                            <div id="activePlay_homeGrid_A6" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_B6" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_C6" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_D6" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_E6" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_F6" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_G6" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_H6" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_I6" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_J6" class="gridChild water"></div>
 
-                            <div id="activePlay_homeGrid_header7" class="activePlay_homeGridChild activePlay_homeGridHeader">7</div>
-                            <div id="activePlay_homeGrid_A7" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_B7" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_C7" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_D7" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_E7" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_F7" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_G7" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_H7" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_I7" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_J7" class="activePlay_homeGridChild water"></div>
+                            <div id="activePlay_homeGrid_header7" class="gridChild gridHeader">7</div>
+                            <div id="activePlay_homeGrid_A7" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_B7" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_C7" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_D7" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_E7" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_F7" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_G7" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_H7" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_I7" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_J7" class="gridChild water"></div>
 
-                            <div id="activePlay_homeGrid_header8" class="activePlay_homeGridChild activePlay_homeGridHeader">8</div>
-                            <div id="activePlay_homeGrid_A8" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_B8" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_C8" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_D8" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_E8" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_F8" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_G8" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_H8" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_I8" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_J8" class="activePlay_homeGridChild water"></div>
+                            <div id="activePlay_homeGrid_header8" class="gridChild gridHeader">8</div>
+                            <div id="activePlay_homeGrid_A8" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_B8" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_C8" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_D8" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_E8" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_F8" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_G8" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_H8" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_I8" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_J8" class="gridChild water"></div>
 
-                            <div id="activePlay_homeGrid_header9" class="activePlay_homeGridChild activePlay_homeGridHeader">9</div>
-                            <div id="activePlay_homeGrid_A9" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_B9" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_C9" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_D9" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_E9" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_F9" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_G9" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_H9" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_I9" class="activePlay_homeGridChild water"></div>
-                            <div id="activePlay_homeGrid_J9" class="activePlay_homeGridChild water"></div>
+                            <div id="activePlay_homeGrid_header9" class="gridChild gridHeader">9</div>
+                            <div id="activePlay_homeGrid_A9" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_B9" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_C9" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_D9" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_E9" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_F9" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_G9" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_H9" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_I9" class="gridChild water"></div>
+                            <div id="activePlay_homeGrid_J9" class="gridChild water"></div>
 
                         </div>
 
@@ -663,23 +669,23 @@
 
                             <h2 class="span2 alignHorizontalCentre">Select Target</h2>
 
-                            <label for="activePlay_shotCoordinateX">X Axis (horizontal):</label>
+                            <label for="activePlay_shotCoordinateX">X Axis:</label>
 
                             <select id="activePlay_shotCoordinateX" class="width50Percent">
                                 <option value="" disabled selected>Letter</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>
-                                <option value="F">F</option>
-                                <option value="G">G</option>
-                                <option value="H">H</option>
-                                <option value="I">I</option>
-                                <option value="J">J</option>
+                                <option value="0">A</option>
+                                <option value="1">B</option>
+                                <option value="2">C</option>
+                                <option value="3">D</option>
+                                <option value="4">E</option>
+                                <option value="5">F</option>
+                                <option value="6">G</option>
+                                <option value="7">H</option>
+                                <option value="8">I</option>
+                                <option value="9">J</option>
                             </select>
 
-                            <label for="activePlay_shotCoordinateY" class="">Y Axis (vertical):</label>
+                            <label for="activePlay_shotCoordinateY" class="">Y Axis:</label>
 
                             <select id="activePlay_shotCoordinateY" class="width50Percent">
                                 <option value="" disabled selected>Number</option>
@@ -716,143 +722,146 @@
 
                 <div id="activePlay_containerRightSide" class="alignHorizontalCentre">
                             
-                    <div id="activePlay_targetGridWrapper">
+                    <div id="activePlay_targetGridWrapper" class="gridWrapper">
 
                         <h1 class="marginBottom">Target Grid</h1>
 
-                        <div id="activePlay_targetGrid">
+                        <div id="activePlay_targetGrid" class="grid">
 
-                            <div id="activePlay_targetGrid_header" class="activePlay_targetGridChild activePlay_targetGridHeader"></div>
-                            <div id="activePlay_targetGrid_headerA" class="activePlay_targetGridChild activePlay_targetGridHeader">A</div>
-                            <div id="activePlay_targetGrid_headerB" class="activePlay_targetGridChild activePlay_targetGridHeader">B</div>
-                            <div id="activePlay_targetGrid_headerC" class="activePlay_targetGridChild activePlay_targetGridHeader">C</div>
-                            <div id="activePlay_targetGrid_headerD" class="activePlay_targetGridChild activePlay_targetGridHeader">D</div>
-                            <div id="activePlay_targetGrid_headerE" class="activePlay_targetGridChild activePlay_targetGridHeader">E</div>
-                            <div id="activePlay_targetGrid_headerF" class="activePlay_targetGridChild activePlay_targetGridHeader">F</div>
-                            <div id="activePlay_targetGrid_headerG" class="activePlay_targetGridChild activePlay_targetGridHeader">G</div>
-                            <div id="activePlay_targetGrid_headerH" class="activePlay_targetGridChild activePlay_targetGridHeader">H</div>
-                            <div id="activePlay_targetGrid_headerI" class="activePlay_targetGridChild activePlay_targetGridHeader">I</div>
-                            <div id="activePlay_targetGrid_headerJ" class="activePlay_targetGridChild activePlay_targetGridHeader">J</div>
+                            <div class="empty"></div>
+                            <div class="xLabel">X axis</div>
+                            <div class="yLabel"><span>Y axis</span></div>
+                            <div id="activePlay_targetGrid_header" class="gridChild gridHeader"></div>
+                            <div id="activePlay_targetGrid_headerA" class="gridChild gridHeader">A</div>
+                            <div id="activePlay_targetGrid_headerB" class="gridChild gridHeader">B</div>
+                            <div id="activePlay_targetGrid_headerC" class="gridChild gridHeader">C</div>
+                            <div id="activePlay_targetGrid_headerD" class="gridChild gridHeader">D</div>
+                            <div id="activePlay_targetGrid_headerE" class="gridChild gridHeader">E</div>
+                            <div id="activePlay_targetGrid_headerF" class="gridChild gridHeader">F</div>
+                            <div id="activePlay_targetGrid_headerG" class="gridChild gridHeader">G</div>
+                            <div id="activePlay_targetGrid_headerH" class="gridChild gridHeader">H</div>
+                            <div id="activePlay_targetGrid_headerI" class="gridChild gridHeader">I</div>
+                            <div id="activePlay_targetGrid_headerJ" class="gridChild gridHeader">J</div>
 
-                            <div id="activePlay_targetGrid_header0" class="activePlay_targetGridChild activePlay_targetGridHeader">0</div>
-                            <div id="activePlay_targetGrid_A0" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_B0" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_C0" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_D0" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_E0" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_F0" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_G0" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_H0" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_I0" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_J0" class="activePlay_targetGridChild water"></div>
+                            <div id="activePlay_targetGrid_header0" class="gridChild gridHeader">0</div>
+                            <div id="activePlay_targetGrid_A0" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_B0" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_C0" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_D0" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_E0" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_F0" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_G0" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_H0" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_I0" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_J0" class="gridChild water"></div>
 
-                            <div id="activePlay_targetGrid_header1" class="activePlay_targetGridChild activePlay_targetGridHeader">1</div>
-                            <div id="activePlay_targetGrid_A1" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_B1" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_C1" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_D1" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_E1" class="activePlay_targetGridChild water "></div>
-                            <div id="activePlay_targetGrid_F1" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_G1" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_H1" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_I1" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_J1" class="activePlay_targetGridChild water"></div>
+                            <div id="activePlay_targetGrid_header1" class="gridChild gridHeader">1</div>
+                            <div id="activePlay_targetGrid_A1" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_B1" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_C1" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_D1" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_E1" class="gridChild water "></div>
+                            <div id="activePlay_targetGrid_F1" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_G1" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_H1" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_I1" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_J1" class="gridChild water"></div>
 
-                            <div id="activePlay_targetGrid_header2" class="activePlay_targetGridChild activePlay_targetGridHeader">2</div>
-                            <div id="activePlay_targetGrid_A2" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_B2" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_C2" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_D2" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_E2" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_F2" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_G2" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_H2" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_I2" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_J2" class="activePlay_targetGridChild water"></div>
+                            <div id="activePlay_targetGrid_header2" class="gridChild gridHeader">2</div>
+                            <div id="activePlay_targetGrid_A2" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_B2" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_C2" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_D2" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_E2" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_F2" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_G2" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_H2" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_I2" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_J2" class="gridChild water"></div>
                             
-                            <div id="activePlay_targetGrid_header3" class="activePlay_targetGridChild activePlay_targetGridHeader">3</div>
-                            <div id="activePlay_targetGrid_A3" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_B3" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_C3" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_D3" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_E3" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_F3" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_G3" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_H3" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_I3" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_J3" class="activePlay_targetGridChild water"></div>
+                            <div id="activePlay_targetGrid_header3" class="gridChild gridHeader">3</div>
+                            <div id="activePlay_targetGrid_A3" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_B3" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_C3" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_D3" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_E3" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_F3" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_G3" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_H3" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_I3" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_J3" class="gridChild water"></div>
 
-                            <div id="activePlay_targetGrid_header4" class="activePlay_targetGridChild activePlay_targetGridHeader">4</div>
-                            <div id="activePlay_targetGrid_A4" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_B4" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_C4" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_D4" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_E4" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_F4" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_G4" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_H4" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_I4" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_J4" class="activePlay_targetGridChild water"></div>
+                            <div id="activePlay_targetGrid_header4" class="gridChild gridHeader">4</div>
+                            <div id="activePlay_targetGrid_A4" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_B4" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_C4" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_D4" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_E4" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_F4" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_G4" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_H4" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_I4" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_J4" class="gridChild water"></div>
 
-                            <div id="activePlay_targetGrid_header5" class="activePlay_targetGridChild activePlay_targetGridHeader">5</div>
-                            <div id="activePlay_targetGrid_A5" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_B5" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_C5" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_D5" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_E5" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_F5" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_G5" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_H5" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_I5" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_J5" class="activePlay_targetGridChild water"></div>
+                            <div id="activePlay_targetGrid_header5" class="gridChild gridHeader">5</div>
+                            <div id="activePlay_targetGrid_A5" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_B5" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_C5" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_D5" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_E5" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_F5" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_G5" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_H5" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_I5" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_J5" class="gridChild water"></div>
 
-                            <div id="activePlay_targetGrid_header6" class="activePlay_targetGridChild activePlay_targetGridHeader">6</div>
-                            <div id="activePlay_targetGrid_A6" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_B6" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_C6" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_D6" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_E6" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_F6" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_G6" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_H6" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_I6" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_J6" class="activePlay_targetGridChild water"></div>
+                            <div id="activePlay_targetGrid_header6" class="gridChild gridHeader">6</div>
+                            <div id="activePlay_targetGrid_A6" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_B6" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_C6" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_D6" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_E6" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_F6" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_G6" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_H6" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_I6" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_J6" class="gridChild water"></div>
 
-                            <div id="activePlay_targetGrid_header7" class="activePlay_targetGridChild activePlay_targetGridHeader">7</div>
-                            <div id="activePlay_targetGrid_A7" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_B7" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_C7" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_D7" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_E7" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_F7" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_G7" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_H7" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_I7" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_J7" class="activePlay_targetGridChild water"></div>
+                            <div id="activePlay_targetGrid_header7" class="gridChild gridHeader">7</div>
+                            <div id="activePlay_targetGrid_A7" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_B7" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_C7" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_D7" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_E7" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_F7" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_G7" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_H7" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_I7" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_J7" class="gridChild water"></div>
 
-                            <div id="activePlay_targetGrid_header8" class="activePlay_targetGridChild activePlay_targetGridHeader">8</div>
-                            <div id="activePlay_targetGrid_A8" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_B8" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_C8" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_D8" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_E8" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_F8" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_G8" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_H8" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_I8" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_J8" class="activePlay_targetGridChild water"></div>
+                            <div id="activePlay_targetGrid_header8" class="gridChild gridHeader">8</div>
+                            <div id="activePlay_targetGrid_A8" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_B8" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_C8" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_D8" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_E8" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_F8" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_G8" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_H8" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_I8" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_J8" class="gridChild water"></div>
 
-                            <div id="activePlay_targetGrid_header9" class="activePlay_targetGridChild activePlay_targetGridHeader">9</div>
-                            <div id="activePlay_targetGrid_A9" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_B9" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_C9" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_D9" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_E9" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_F9" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_G9" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_H9" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_I9" class="activePlay_targetGridChild water"></div>
-                            <div id="activePlay_targetGrid_J9" class="activePlay_targetGridChild water"></div>
+                            <div id="activePlay_targetGrid_header9" class="gridChild gridHeader">9</div>
+                            <div id="activePlay_targetGrid_A9" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_B9" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_C9" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_D9" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_E9" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_F9" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_G9" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_H9" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_I9" class="gridChild water"></div>
+                            <div id="activePlay_targetGrid_J9" class="gridChild water"></div>
 
                         </div>
 

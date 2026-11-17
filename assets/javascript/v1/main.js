@@ -17,7 +17,7 @@
 
 
 // Change state
-    changeState("setup");
+    changeState("initialisation");
 
 
 // Initialise controllers

@@ -5,7 +5,7 @@
 
 #activePlay_container{
     display: grid;
-    grid-template-columns: minmax(0, 8fr) minmax(0, 4fr) minmax(0, 8fr);
+    grid-template-columns: minmax(0, 8fr) minmax(0, 2fr) minmax(0, 8fr);
     grid-template-rows: 15vh 80vh 5vh;
     width: 100%;
 }
@@ -15,37 +15,6 @@
     max-height: 100%;
     height: auto;
     }
-
-/* HOME GRID */
-
-#activePlay_homeGridWrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#activePlay_homeGrid{
-    display: grid;
-    grid-template-columns: repeat(11, minmax(0, 1fr));
-    grid-template-rows: repeat(11, minmax(0, 1fr));
-    height: 70vh;
-    aspect-ratio: 1 / 1;
-    gap: 1px;
-    background-color: var(--gridBorder);
-}
-
-.activePlay_homeGridChild{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.activePlay_homeGridHeader{
-    background-color: var(--gridHeaderBackground);
-    color: var(--gridHeaderColour);
-    font-weight: var(--gridHeaderFont-Weight);
-    font-size: var(--gridHeaderFont-Size);
-}
 
 /* PLAYER ACTION */
 
@@ -79,35 +48,4 @@
     flex-direction: column;
     align-items: center;
     
-}
-
-/* TARGET GRID */
-
-#activePlay_targetGridWrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#activePlay_targetGrid{
-    display: grid;
-    grid-template-columns: repeat(11, minmax(0, 1fr));
-    grid-template-rows: repeat(11, minmax(0, 1fr));
-    height: 70vh;
-    aspect-ratio: 1 / 1;
-    gap: 1px;
-    background-color: var(--gridBorder);
-}
-
-.activePlay_targetGridChild{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.activePlay_targetGridHeader{
-    background-color: var(--gridHeaderBackground);
-    color: var(--gridHeaderColour);
-    font-weight: var(--gridHeaderFont-Weight);
-    font-size: var(--gridHeaderFont-Size);
 }

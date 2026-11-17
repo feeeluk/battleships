@@ -125,10 +125,6 @@ input[type="text"]{
     grid-column: span 6;
 }
 
-.span11{
-    grid-column: span 11;
-}
-
 .marginTop{
     margin-top: 20px;
 }
