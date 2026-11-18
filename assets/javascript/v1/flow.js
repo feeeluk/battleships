@@ -31,7 +31,7 @@
         logic.calculatePlacedShipSegmentCoordinates(ship);
         ui.showTheNextShipInTheConsole(ship);
         ui.disablePlaceShipInputsForCurrentShip(ship);
-        // ui.enableEditButton(ship);
+        ui.enableEditButton(ship);
         ui.enablePlaceShipInputsForNextShip(ship);    
     }
 

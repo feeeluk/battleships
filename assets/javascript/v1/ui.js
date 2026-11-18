@@ -140,7 +140,7 @@
     {
         let nextShip = whatIsTheNextShip(ship);
 
-        if(nextShip == ""){}
+        if(nextShip == "" || !shipPlacementData[nextShip].editButton.classList.contains("disabled")){}
         else{
 
             let inputs = document.querySelectorAll(`.${nextShip}`);
@@ -149,11 +149,6 @@
                 input.classList.remove("disabled");
             });
 
-            if(shipPlacementData[nextShip].editButton.classList.contains("disabled")){
-                console.log("testttttttttttttttt");
-                // shipPlacementData[nextShip].editButton.classList.add("disabled");
-                disableEditButton(nextShip);
-            }
         }
     }
 
