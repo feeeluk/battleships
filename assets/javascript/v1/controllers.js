@@ -4,7 +4,7 @@
 // IMPORT VARIABLES & FUNCTIONS 
     import { startGame } from "./flow.js";
     import { shipPlacementData } from "./ui.js";
-    import { enablePlaceShipButton } from "./ui.js";
+    import { enablePlaceButton } from "./ui.js";
     import { placeShip } from "./flow.js";
     import { editShip } from "./flow.js";
 
@@ -14,23 +14,23 @@
     
     // assign functions to variables - ship placement dropdown menus 
     const checkCarrierInputs = () => {
-        enablePlaceShipButton("carrier");
+        enablePlaceButton("carrier");
     };
 
     const checkBattleshipInputs = () => {
-        enablePlaceShipButton("battleship");
+        enablePlaceButton("battleship");
     };
 
     const checkDestroyerInputs = () => {
-        enablePlaceShipButton("destroyer");
+        enablePlaceButton("destroyer");
     };
 
     const checkCruiserInputs = () => {
-        enablePlaceShipButton("cruiser");
+        enablePlaceButton("cruiser");
     };
 
     const checkPatrolBoatInputs = () => {
-        enablePlaceShipButton("patrolBoat");
+        enablePlaceButton("patrolBoat");
     };
 
     // assign function to variables - place Ship

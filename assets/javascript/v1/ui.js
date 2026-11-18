@@ -92,9 +92,17 @@
         },
     }
 
-    export function enablePlaceShipButton(ship) {
+    export function enableEditButton(ship) {
+        shipPlacementData[ship].editButton.classList.remove("disabled");
+    }
 
-        disableEditPlaceShipButton(ship);
+    export function disableEditButton(ship) {
+        shipPlacementData[ship].editButton.classList.add("disabled");
+    }
+
+    export function enablePlaceButton(ship) {
+
+        disableEditButton(ship);
         const controls = shipPlacementData[ship];
 
         if (
@@ -107,10 +115,21 @@
         }
     }
 
-    export function showPlacedShipInputValuesInTheConsole(ship){
-        console.log(`${ship} - Place ship at: (X:${shipPlacementData[ship].x.value}, Y:${shipPlacementData[ship].y.value})`);
-        console.log(`${ship} - Orientation: "${shipPlacementData[ship].orientation.value}"`);
-    } 
+    export function enablePlaceShipInputsForCurrentShip(ship){
+        let inputs = document.querySelectorAll(`.${ship}`);
+
+            inputs.forEach(input => {
+                input.classList.remove("disabled");
+            });
+    }
+
+    export function disablePlaceShipInputsForCurrentShip(ship) {
+        let inputs =document.querySelectorAll(`.${ship}`);
+        inputs.forEach(input => {
+            input.classList.add("disabled");
+        });
+        shipPlacementData[ship].placeButton.classList.add("disabled");
+    }
 
     export function enablePlaceShipInputsForNextShip(ship)
     {
@@ -127,35 +146,30 @@
         }
     }
 
-    export function disablePlaceShipInputsForCurrentShip(ship) {
-        let inputs =document.querySelectorAll(`.${ship}`);
-        inputs.forEach(input => {
-            input.classList.add("disabled");
-        });
-        shipPlacementData[ship].placeButton.classList.add("disabled");
+    export function disablePlaceShipInputsForNextShip(ship){
+        let nextShip = whatIsTheNextShip(ship);
+
+        if(nextShip == ""){}
+        else{
+
+            let inputs = document.querySelectorAll(`.${nextShip}`);
+
+            inputs.forEach(input => {
+                input.classList.add("disabled");
+            });
+        }
     }
 
-    export function enableEditPlacedShipButtonForCurrentShip(ship) {
-        shipPlacementData[ship].editButton.classList.remove("disabled");
-    }
-
-    export function disableEditPlaceShipButton(ship) {
-        shipPlacementData[ship].editButton.classList.add("disabled");
+    export function showPlacedShipInputValuesInTheConsole(ship){
+        console.log(`${ship} - Place ship at: (X:${shipPlacementData[ship].x.value}, Y:${shipPlacementData[ship].y.value})`);
+        console.log(`${ship} - Orientation: "${shipPlacementData[ship].orientation.value}"`);
     }
 
     export function showTheNextShipInTheConsole(ship){
         if(ship == "patrolBoat"){}
         else{
-            console.log(`The next ship to be placed is the ${whatIsTheNextShip(shipName)}`);
+            console.log(`The next ship to be placed is the ${whatIsTheNextShip(ship)}`);
         }
-    }
-
-    export function enablePlaceShipInputsForCurrentShip(ship){
-
-    }
-
-    export function enablePlaceShipInputsForCurrentShip(ship){
-
     }
 
 
