@@ -54,7 +54,6 @@
     }
 
     export function editShip(ship){
-        console.log(`test - edit ${ship}`);
         ui.enablePlaceShipInputsForCurrentShip(ship);
         ui.disablePlaceShipInputsForNextShip(ship);
         ui.disableEditButton(ship);
