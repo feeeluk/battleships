@@ -2,22 +2,23 @@
 
 
 // IMPORT FUNCTIONS
-    import { resetState } from "./state.js";
+    import { resetGameState } from "./state.js";
     import { resetUI } from "./ui.js";
     import { removeEventListeners } from './controllers.js';
-    import { changeState } from "./state.js";
+    import { changeGameState } from "./state.js";
     import { addEventListeners } from './controllers.js';
+    import { showGameStateDetails } from "./ui.js";
 
 //  FUNCTIONS
 
 // Reset game
-    resetState();  
+    resetGameState();  
     resetUI();
     removeEventListeners();
 
 
 // Change state
-    changeState("initialisation");
+    changeGameState("initialisation");
 
 
 // Initialise controllers

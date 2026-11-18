@@ -9,11 +9,16 @@
 // IMPORT VARIABLES & FUNCTIONS
 
     import { whatIsTheNextShip } from "./logic.js"; // function
+    import { gameState } from "./state.js";
 
 // GAME WIDE
 
+    export function showGameStateDetails(){
+        console.log(`current state: ${gameState.layer}`)
+        console.log(`current turn: ${gameState.currentTurn}`)
+    }
+
     export function showLayer(layerName) {
-        console.log(`UI layer => ${layerName}`);
 
         // Get all elements with the class 'layer' and hide them
         const layers = document.querySelectorAll('.layer');
@@ -143,6 +148,12 @@
             inputs.forEach(input => {
                 input.classList.remove("disabled");
             });
+
+            if(shipPlacementData[nextShip].editButton.classList.contains("disabled")){
+                console.log("testttttttttttttttt");
+                // shipPlacementData[nextShip].editButton.classList.add("disabled");
+                disableEditButton(nextShip);
+            }
         }
     }
 

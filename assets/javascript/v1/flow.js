@@ -7,21 +7,6 @@
     import * as logic from './logic.js';
     import * as ui from './ui.js';
 
-    // import { state } from './state.js'; // object
-    // import { initialiseGrids } from './state.js'; // function
-    // import { initialiseFleet } from './state.js'; // function
-    // import { changeState } from './state.js'; // function
-
-    // import { calculatePlacedShipSegmentCoordinates } from './logic.js'; // function
-
-    // import { disablePlaceShipInputsForCurrentShip } from './ui.js'; // function
-    // import { enableEditButton } from './ui.js'; // function
-    // import { showTheNextShipInTheConsole } from './ui.js'; // function
-    // import { showPlacedShipInputValuesInTheConsole } from './ui.js'; // function
-    // import { enablePlaceShipInputsForNextShip } from './ui.js'; // function
-    // import { enablePlaceShipInputsForCurrentShip } from './ui.js'; // function
-    // import { disablePlaceShipInputsForNextShip } from './ui.js'; // function
-
 
 // INITIALISATION
 
@@ -30,15 +15,12 @@
         console.log("start game button pressed"); // testing purposes only
         
         console.log("initialise grids"); // testing purposes only
-        state.initialiseGrids();
+        state.initialiseBothGridsForEachPlayer();
 
         console.log("initialise fleet"); // testing purposes only
-        state.initialiseFleet();
+        state.initialiseFleetForEachPlayer();
 
-        state.changeState("setup");
-        console.log(`current state: ${state.layer}`) // testing purposes only
-
-        console.log(`current turn: ${state.currentTurn}`) // testing purposes only
+        state.changeGameState("setup");
     }
 
 // SETUP
@@ -49,7 +31,7 @@
         logic.calculatePlacedShipSegmentCoordinates(ship);
         ui.showTheNextShipInTheConsole(ship);
         ui.disablePlaceShipInputsForCurrentShip(ship);
-        ui.enableEditButton(ship);
+        // ui.enableEditButton(ship);
         ui.enablePlaceShipInputsForNextShip(ship);    
     }
 

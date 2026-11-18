@@ -1,13 +1,14 @@
 // STATE - The data. Tracks state and game data. Holds the raw variables (player stats, scores, current phase string). It has zero knowledge of HTML elements and zero knowledge of math rules. It only updates and returns data.
 
-// IMPORT FUNCTIONS
+// IMPORT
     import { showLayer } from './ui.js';
+    import { showGameStateDetails } from './ui.js';
 
-// STATE OBJECT
-    export let state; // main state object
+// STATE
+    export let gameState; // main state object
 
-    export function resetState(){
-        state = {
+    export function resetGameState(){
+        gameState = {
             player: {
                     homeGrid: null,
                     targetGrid: null,
@@ -25,12 +26,14 @@
         }
     }
 
-    export function changeState(value){
-        console.log(`state => ${value}`);
-        state.layer == value;
+    export function changeGameState(value){
+        gameState.layer = value;
         showLayer(value);
+        showGameStateDetails();
     }
 
+
+// STATE > GRIDS    
     function createEmptyGrid(){
 
         const grid = [];
@@ -47,14 +50,16 @@
         return grid;
     }
 
-    export function initialiseGrids(){
+    export function initialiseBothGridsForEachPlayer(){
         
-        state.player.homeGrid = createEmptyGrid();
-        state.player.targetGrid = createEmptyGrid();
-        state.computer.homeGrid = createEmptyGrid();
-        state.computer.targetGrid = createEmptyGrid();
+        gameState.player.homeGrid = createEmptyGrid();
+        gameState.player.targetGrid = createEmptyGrid();
+        gameState.computer.homeGrid = createEmptyGrid();
+        gameState.computer.targetGrid = createEmptyGrid();
     }
 
+    
+// STATE > FLEET
     function createShip(id, name, length) {
 
         const ship = {
@@ -88,11 +93,12 @@
         ];
     }
 
-    export function initialiseFleet(){
-        state.player.ships = createFleet();
-        state.computer.ships = createFleet();
+    export function initialiseFleetForEachPlayer(){
+        gameState.player.ships = createFleet();
+        gameState.computer.ships = createFleet();
     }
 
+// STATE TURN
     function endTurn(){}
 
     
