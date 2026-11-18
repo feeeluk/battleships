@@ -6,58 +6,46 @@
     import { initialiseGrids } from './state.js'; // function
     import { initialiseFleet } from './state.js'; // function
     import { changeState } from './state.js'; // function
-    import { shipPlacementData } from './ui.js'; // object
-    import { whatIsTheNextShip } from './logic.js'; // function
-    import { calculateSegmentLocations } from './logic.js'; // function
-    import { disableInputsForEachShip as disableInputsForCurrentShip } from './ui.js'; // function
-    import { enableEditButtonForEachShip as enableEditButtonForCurrentShip } from './ui.js'; // function
-    import { displayTheNextShip as showTheNextShipInTheConsole } from './logic.js'; // function
+    import { calculatePlacedShipSegmentCoordinates } from './logic.js'; // function
+    import { disablePlaceShipInputsForCurrentShip } from './ui.js'; // function
+    import { enableEditPlacedShipButtonForCurrentShip } from './ui.js'; // function
+    import { showTheNextShipInTheConsole } from './ui.js'; // function
+    import { showPlacedShipInputValuesInTheConsole } from './ui.js'; // function
+    import { enablePlaceShipInputsForNextShip } from './ui.js'; //function
+
 
 // INITIALISATION
 
     export function startGame(){
 
-        console.log("start game button pressed");
+        console.log("start game button pressed"); // testing purposes only
         
-        console.log("initialise grids");
+        console.log("initialise grids"); // testing purposes only
         initialiseGrids();
 
-        console.log("initialise fleet");
+        console.log("initialise fleet"); // testing purposes only
         initialiseFleet();
 
         changeState("setup");
+        console.log(`current state: ${state.layer}`) // testing purposes only
 
-        console.log(`current turn: ${state.currentTurn}`)
+        console.log(`current turn: ${state.currentTurn}`) // testing purposes only
     }
 
 // SETUP
 
-    export function placeEachShip(ship){
+    export function placeShip(ship){
 
-        showShipInputSelectionsInTheConsole(ship);
-        calculateSegmentLocations(ship);
+        showPlacedShipInputValuesInTheConsole(ship);
+        calculatePlacedShipSegmentCoordinates(ship);
         showTheNextShipInTheConsole(ship);
-        disableInputsForCurrentShip(ship);
-        enableEditButtonForCurrentShip(ship);
-        enableNextShipInputs(ship);    
+        disablePlaceShipInputsForCurrentShip(ship);
+        enableEditPlacedShipButtonForCurrentShip(ship);
+        enablePlaceShipInputsForNextShip(ship);    
     }
 
-    function showShipInputSelectionsInTheConsole(shipName){
-        console.log(`${shipName} - Place ship at: (X:${shipPlacementData[shipName].x.value}, Y:${shipPlacementData[shipName].y.value})`);
-        console.log(`${shipName} - Orientation: "${shipPlacementData[shipName].orientation.value}"`);
-    }    
-
-    function enableNextShipInputs(shipName)
-    {
-        let nextShip = whatIsTheNextShip(shipName);
-
-        if(nextShip == ""){}
-        else{
-
-            let inputs = document.querySelectorAll(`.${nextShip}`);
-
-            inputs.forEach(input => {
-                input.classList.remove("disabled");
-            });
-        }
+    export function editShip(ship){
+        console.log(`test - edit ${ship}`);
+        //enablePlaceShipInputsForCurrentShip(ship);
+        //disablePlaceShipInputsForNextShip(ship);
     }

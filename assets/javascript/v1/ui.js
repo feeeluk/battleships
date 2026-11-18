@@ -6,6 +6,10 @@
         console.clear();
     }
 
+// IMPORT VARIABLES & FUNCTIONS
+
+    import { whatIsTheNextShip } from "./logic.js"; // function
+
 // GAME WIDE
 
     export function showLayer(layerName) {
@@ -88,9 +92,9 @@
         },
     }
 
-    export function enablePlaceButtonForEachShip(ship) {
+    export function enablePlaceShipButton(ship) {
 
-        disableEditButtonForEachShip(ship);
+        disableEditPlaceShipButton(ship);
         const controls = shipPlacementData[ship];
 
         if (
@@ -103,19 +107,60 @@
         }
     }
 
-    export function disableInputsForEachShip(ship) {
+    export function showPlacedShipInputValuesInTheConsole(ship){
+        console.log(`${ship} - Place ship at: (X:${shipPlacementData[ship].x.value}, Y:${shipPlacementData[ship].y.value})`);
+        console.log(`${ship} - Orientation: "${shipPlacementData[ship].orientation.value}"`);
+    } 
+
+    export function enablePlaceShipInputsForNextShip(ship)
+    {
+        let nextShip = whatIsTheNextShip(ship);
+
+        if(nextShip == ""){}
+        else{
+
+            let inputs = document.querySelectorAll(`.${nextShip}`);
+
+            inputs.forEach(input => {
+                input.classList.remove("disabled");
+            });
+        }
+    }
+
+    export function disablePlaceShipInputsForCurrentShip(ship) {
         let inputs =document.querySelectorAll(`.${ship}`);
         inputs.forEach(input => {
             input.classList.add("disabled");
         });
         shipPlacementData[ship].placeButton.classList.add("disabled");
-
     }
 
-    export function enableEditButtonForEachShip(ship) {
+    export function enableEditPlacedShipButtonForCurrentShip(ship) {
         shipPlacementData[ship].editButton.classList.remove("disabled");
     }
 
-    export function disableEditButtonForEachShip(ship) {
+    export function disableEditPlaceShipButton(ship) {
         shipPlacementData[ship].editButton.classList.add("disabled");
     }
+
+    export function showTheNextShipInTheConsole(ship){
+        if(ship == "patrolBoat"){}
+        else{
+            console.log(`The next ship to be placed is the ${whatIsTheNextShip(shipName)}`);
+        }
+    }
+
+    export function enablePlaceShipInputsForCurrentShip(ship){
+
+    }
+
+    export function enablePlaceShipInputsForCurrentShip(ship){
+
+    }
+
+
+// ACTIVEPLAY
+
+// EVALUATERESULT
+
+// GAMEOVER

@@ -4,8 +4,9 @@
 // IMPORT VARIABLES & FUNCTIONS 
     import { startGame } from "./flow.js";
     import { shipPlacementData } from "./ui.js";
-    import { enablePlaceButtonForEachShip } from "./ui.js";
-    import { placeEachShip } from "./flow.js";
+    import { enablePlaceShipButton } from "./ui.js";
+    import { placeShip } from "./flow.js";
+    import { editShip } from "./flow.js";
 
 
 // VARIABLES
@@ -13,44 +14,65 @@
     
     // assign functions to variables - ship placement dropdown menus 
     const checkCarrierInputs = () => {
-        enablePlaceButtonForEachShip("carrier");
+        enablePlaceShipButton("carrier");
     };
 
     const checkBattleshipInputs = () => {
-        enablePlaceButtonForEachShip("battleship");
+        enablePlaceShipButton("battleship");
     };
 
     const checkDestroyerInputs = () => {
-        enablePlaceButtonForEachShip("destroyer");
+        enablePlaceShipButton("destroyer");
     };
 
     const checkCruiserInputs = () => {
-        enablePlaceButtonForEachShip("cruiser");
+        enablePlaceShipButton("cruiser");
     };
 
     const checkPatrolBoatInputs = () => {
-        enablePlaceButtonForEachShip("patrolBoat");
+        enablePlaceShipButton("patrolBoat");
     };
 
-    // assign functions to variables - place ship button
+    // assign function to variables - place Ship
     const placeCarrier = () => {
-        placeEachShip("carrier");
+        placeShip("carrier");
     };
 
     const placeBattleship = () => {
-        placeEachShip("battleship");
+        placeShip("battleship");
     };
 
     const placeDestroyer = () => {
-        placeEachShip("destroyer");
+        placeShip("destroyer");
     };
 
     const placeCruiser = () => {
-        placeEachShip("cruiser");
+        placeShip("cruiser");
     };
 
     const placePatrolBoat = () => {
-        placeEachShip("patrolBoat");
+        placeShip("patrolBoat");
+    };
+
+    // assign function to variables - edit Ship
+    const editCarrier = () => {
+        editShip("carrier");
+    };
+
+    const editBattleship = () => {
+        editShip("battleship");
+    };
+
+    const editDestroyer = () => {
+        editShip("destroyer");
+    };
+
+    const editCruiser = () => {
+        editShip("cruiser");
+    };
+
+    const editPatrolBoat = () => {
+        editShip("patrolBoat");
     };
 
 
@@ -63,26 +85,31 @@
         shipPlacementData.carrier.x.addEventListener("change", checkCarrierInputs);
         shipPlacementData.carrier.y.addEventListener("change", checkCarrierInputs);
         shipPlacementData.carrier.orientation.addEventListener("change", checkCarrierInputs);
+        shipPlacementData.carrier.editButton.addEventListener("click", editCarrier);
         shipPlacementData.carrier.placeButton.addEventListener("click", placeCarrier);
 
         shipPlacementData.battleship.x.addEventListener("change", checkBattleshipInputs);
         shipPlacementData.battleship.y.addEventListener("change", checkBattleshipInputs);
-        shipPlacementData.battleship.orientation.addEventListener("change", checkBattleshipInputs);
+        shipPlacementData.battleship.orientation.addEventListener("change", checkBattleshipInputs)
+        shipPlacementData.battleship.editButton.addEventListener("click", editBattleship);
         shipPlacementData.battleship.placeButton.addEventListener("click", placeBattleship);
 
         shipPlacementData.destroyer.x.addEventListener("change", checkDestroyerInputs);
         shipPlacementData.destroyer.y.addEventListener("change", checkDestroyerInputs);
         shipPlacementData.destroyer.orientation.addEventListener("change", checkDestroyerInputs);
+        shipPlacementData.destroyer.editButton.addEventListener("click", editDestroyer);
         shipPlacementData.destroyer.placeButton.addEventListener("click", placeDestroyer);
 
         shipPlacementData.cruiser.x.addEventListener("change", checkCruiserInputs);
         shipPlacementData.cruiser.y.addEventListener("change", checkCruiserInputs);
         shipPlacementData.cruiser.orientation.addEventListener("change", checkCruiserInputs);
+        shipPlacementData.cruiser.editButton.addEventListener("click", editCruiser);
         shipPlacementData.cruiser.placeButton.addEventListener("click", placeCruiser);
 
         shipPlacementData.patrolBoat.x.addEventListener("change", checkPatrolBoatInputs);
         shipPlacementData.patrolBoat.y.addEventListener("change", checkPatrolBoatInputs);
         shipPlacementData.patrolBoat.orientation.addEventListener("change", checkPatrolBoatInputs);
+        shipPlacementData.patrolBoat.editButton.addEventListener("click", editPatrolBoat);
         shipPlacementData.patrolBoat.placeButton.addEventListener("click", placePatrolBoat);
     }
 
@@ -93,26 +120,31 @@
         shipPlacementData.carrier.x.removeEventListener("change", checkCarrierInputs);
         shipPlacementData.carrier.y.removeEventListener("change", checkCarrierInputs);
         shipPlacementData.carrier.orientation.removeEventListener("change", checkCarrierInputs);
+        shipPlacementData.carrier.editButton.removeEventListener("click", editCarrier);
         shipPlacementData.carrier.placeButton.removeEventListener("click", placeCarrier);
 
         shipPlacementData.battleship.x.removeEventListener("change", checkBattleshipInputs);
         shipPlacementData.battleship.y.removeEventListener("change", checkBattleshipInputs);
         shipPlacementData.battleship.orientation.removeEventListener("change", checkBattleshipInputs);
+        shipPlacementData.battleship.editButton.removeEventListener("click", editBattleship);
         shipPlacementData.battleship.placeButton.removeEventListener("click", placeBattleship);
 
         shipPlacementData.destroyer.x.removeEventListener("change", checkDestroyerInputs);
         shipPlacementData.destroyer.y.removeEventListener("change", checkDestroyerInputs);
         shipPlacementData.destroyer.orientation.removeEventListener("change", checkDestroyerInputs);
+        shipPlacementData.destroyer.editButton.removeEventListener("click", editDestroyer);
         shipPlacementData.destroyer.placeButton.removeEventListener("click", placeDestroyer);
 
         shipPlacementData.cruiser.x.removeEventListener("change", checkCruiserInputs);
         shipPlacementData.cruiser.y.removeEventListener("change", checkCruiserInputs);
         shipPlacementData.cruiser.orientation.removeEventListener("change", checkCruiserInputs);
+        shipPlacementData.cruiser.editButton.removeEventListener("click", editCruiser);
         shipPlacementData.cruiser.placeButton.removeEventListener("click", placeCruiser);
 
         shipPlacementData.patrolBoat.x.removeEventListener("change", checkPatrolBoatInputs);
         shipPlacementData.patrolBoat.y.removeEventListener("change", checkPatrolBoatInputs);
         shipPlacementData.patrolBoat.orientation.removeEventListener("change", checkPatrolBoatInputs);
+        shipPlacementData.patrolBoat.editButton.removeEventListener("click", editPatrolBoat);
         shipPlacementData.patrolBoat.placeButton.removeEventListener("click", placePatrolBoat);
     }
 

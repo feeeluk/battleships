@@ -34,16 +34,9 @@ import { shipPlacementData } from "./ui.js";
 
         return nextShipName;
 
-    }
+    }   
 
-    export function displayTheNextShip(shipName){
-        if(shipName == "patrolBoat"){}
-        else{
-            console.log(`The next ship to be placed is the ${whatIsTheNextShip(shipName)}`);
-        }
-    }
-
-    export function calculateSegmentLocations(shipName){
+    export function calculatePlacedShipSegmentCoordinates(shipName){
 
         console.log(`${shipName} segment #1 (X:${shipPlacementData[shipName].x.value}, Y:${shipPlacementData[shipName].y.value})`);
         
