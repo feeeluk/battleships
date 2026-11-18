@@ -58,5 +58,4 @@
         ui.enablePlaceShipInputsForCurrentShip(ship);
         ui.disablePlaceShipInputsForNextShip(ship);
         ui.disableEditButton(ship);
-
     }
