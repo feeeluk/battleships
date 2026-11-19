@@ -8,8 +8,9 @@
 
 // IMPORT VARIABLES & FUNCTIONS
 
-    import { whatIsTheNextShip } from "./logic.js"; // function
+    import { whatIsTheNextShip } from "./logic.js";
     import { gameState } from "./state.js";
+    import { calculateXCoordinateAsLetter } from "./logic.js";
 
 // GAME WIDE
 
@@ -167,7 +168,7 @@
     }
 
     export function showPlacedShipInputValuesInTheConsole(ship){
-        console.log(`${ship} - Place ship at: (X:${shipPlacementData[ship].x.value}, Y:${shipPlacementData[ship].y.value})`);
+        console.log(`${ship} - Place ship at: (X:${calculateXCoordinateAsLetter(Number(shipPlacementData[ship].x.value))}, Y:${shipPlacementData[ship].y.value})`);
         console.log(`${ship} - Orientation: "${shipPlacementData[ship].orientation.value}"`);
     }
 

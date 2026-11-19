@@ -7,7 +7,6 @@
     import * as logic from './logic.js';
     import * as ui from './ui.js';
 
-
 // INITIALISATION
 
     export function startGame(){
