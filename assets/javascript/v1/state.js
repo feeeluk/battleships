@@ -1,8 +1,9 @@
 // STATE - The data. Tracks state and game data. Holds the raw variables (player stats, scores, current phase string). It has zero knowledge of HTML elements and zero knowledge of math rules. It only updates and returns data.
 
 // IMPORT
-    import { showLayer } from './ui.js';
+    import { shipPlacementData } from './ui.js';
     import { showGameStateDetails } from './ui.js';
+    import { showLayer } from './ui.js';
 
 // STATE
     export let gameState; // main state object
@@ -100,5 +101,12 @@
 
 // STATE TURN
     function endTurn(){}
+
+// SHIP PLACEMENT DATA
+
+    export function removeSegmentsFromShipPlacementData(ship){
+        shipPlacementData[ship].segments = [];
+        console.log(shipPlacementData[ship].segments);
+    }
 
     

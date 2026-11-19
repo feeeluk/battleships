@@ -38,4 +38,5 @@
         ui.enablePlaceShipInputsForCurrentShip(ship);
         ui.disablePlaceShipInputsForNextShip(ship);
         ui.disableEditButton(ship);
+        state.removeSegmentsFromShipPlacementData(ship);
     }
